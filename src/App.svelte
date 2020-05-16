@@ -1,30 +1,53 @@
 <script>
-	export let name;
+
+	let current = 'home';
+
+	import Home from './Home.svelte';
+	import Projects from './Projects.svelte';
+	import Services from './Services.svelte';
+	import About from './About.svelte';
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	
+	<section>
+		
+		{#if current === 'home'}<Home/>{/if}
+		{#if current === 'projects'}<Projects/>{/if}
+		{#if current === 'services'}<Services/>{/if}
+		{#if current === 'about'}<About/>{/if}
+
+	</section>
+
+	<nav>
+		<button class="{current === 'home' ? 'active' : ''}" on:click="{() => current = 'home'}">Home</button>
+		<button class="{current === 'projects' ? 'active' : ''}"	on:click="{() => current = 'projects'}">Projects</button>
+		<button class="{current === 'services' ? 'active' : ''}"	on:click="{() => current = 'services'}">Services</button>
+		<button class="{current === 'about' ? 'active' : ''}"	on:click="{() => current = 'about'}">About</button>
+	</nav>
+
+
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+main {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	padding: 20%;
+	box-sizing: border-box;
+}
+	button {
+		display: block;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+	.active {
+		background-color: #ff3e00;
+		color: white;
 	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	nav {
+		position: fixed;
+		top: 40%;
+		right: 1rem;
 	}
 </style>
