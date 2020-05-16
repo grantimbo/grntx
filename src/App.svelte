@@ -2,7 +2,6 @@
 
 	let current = 'home';
 
-	import Home from './Home.svelte';
 	import Projects from './Projects.svelte';
 	import Services from './Services.svelte';
 	import About from './About.svelte';
@@ -12,7 +11,15 @@
 	
 	<section>
 		
-		{#if current === 'home'}<Home/>{/if}
+		{#if current === 'home'}
+			<div class="home">
+				<div>
+					<h1>Hello</h1>
+					<p>My name is Grant Imbo. I'm a multimedia artist creating cool stuff across the web and a developer focusing mainly on front-end.</p>
+					<button on:click="{() => current = 'projects'}">Projects</button>
+				</div>
+			</div>
+		{/if}
 		{#if current === 'projects'}<Projects/>{/if}
 		{#if current === 'services'}<Services/>{/if}
 		{#if current === 'about'}<About/>{/if}
@@ -30,13 +37,13 @@
 </main>
 
 <style>
-main {
-	display: flex;
-	align-items: center;
-	height: 100vh;
-	padding: 20%;
-	box-sizing: border-box;
-}
+	section .home {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		padding: 20%;
+		box-sizing: border-box;
+	}
 	button {
 		display: block;
 	}
