@@ -1,20 +1,15 @@
 <script>
-    import { onMount } from 'svelte';
     import Modal from './Modal.svelte';
-
 	let showModal = false;
-
-    let projects = [];
     let ModalContents = [
         {title: null},
         {date: null},
         {content: null}
     ]
 
-    onMount(async () => {
-        const res = await fetch(`https://grantimbo.com/wp-json/wp/v2/posts`);
-        projects = await res.json();
-    });
+    export let projects;
+
+    
 </script>
 
 <main>
