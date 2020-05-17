@@ -8,7 +8,7 @@
 	let current = 'home';
 
 	onMount(async () => {
-        const res = await fetch(`https://behance.net/v2/users/grantimbo?api_key=UTJZMhvIa09iMSNsrgoYatCs0j5TavsF`);
+        const res = await fetch(`https://grantimbo.com/wp-json/wp/v2/posts`);
         projects = await res.json();
     });
 
