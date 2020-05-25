@@ -1,4 +1,4 @@
-<main>
+
 <h1>ABOUT</h1>
 <p>A brief history where I’ve worked</p>
 
@@ -27,4 +27,3 @@
 	Shoot a me a message at  grant.imbo@gmail.com</p>
 
 <p>Or just want to be friends?  Find me online on most digital platforms @grantimbo or @grntx or by clicking the links below. </p>
-</main>
