@@ -1,11 +1,13 @@
 <script>
     import Modal from '../components/Modal.svelte';
+    import { Link } from "svelte-routing";
 
 	let showModal = false;
     let ModalContents = [
         {title: null},
         {thumbnail: null},
-        {content: null}
+        {content: null},
+        {slug: null}
     ]
 
     export let projects;

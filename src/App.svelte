@@ -1,11 +1,14 @@
 <script>
+	import { Router, Route } from "svelte-routing";
 	import Projects from './pages/Projects.svelte';
+	import Project from './pages/Project.svelte';
 	import Services from './pages/Services.svelte';
 	import About from './pages/About.svelte';
+	import Home from './pages/Home.svelte';
+	import NavLink from './components/Navlink.svelte';
 	import { onMount } from 'svelte';
 
 	let projects = [];
-	let current = 'home';
 	let apiHost = `https://grantimbocom.ipage.com/`;
 
 	onMount(async () => {
@@ -13,62 +16,30 @@
 		projects = await res.json();
 		projects = projects.entries;
 	});
-	
-	let active = false;
 
-	$: if (active == true) {
-		setTimeout(function() {
-			active = false;
-		}, 1200)
-	}
-
-	function tae(e) {
-		active = true;
-		setTimeout(function() {
-			current = e
-		}, 1200);
-	}
+	export let url = "";
 
 	
 	
 </script>
 
 <main>
-	<div class="transition" class:active={active}></div>
-	<section>
-		{#if current === 'home'}
-			<div class="home">
-				<h1>Hello</h1>
-				<p>My name is Grant Imbo. I'm a multimedia artist creating cool stuff across the web and a developer focusing mainly on front-end.</p>
-				<button on:click="{() => tae('projects')}">Projects</button>
-			</div>
-		{/if}
-		{#if current === 'projects'}
-			<Projects {projects} {apiHost}/>
-		{/if}
-		{#if current === 'services'}
-			<Services/>
-		{/if}
-		{#if current === 'about'}
-			<About/>
-		{/if}
-	</section>
+	<Router url="{url}">
+		<Route path="/"><Home /></Route>
+		<Route path="projects"><Projects {projects} {apiHost}/></Route>
+		<Route path="projects/:slug"><Project/></Route>
+		<Route path="services"><Services/></Route>
+		<Route path="about"><About/></Route>
+
+		<nav>
+			<NavLink to="/">Home</NavLink>
+			<NavLink to="projects">Projects</NavLink>
+			<NavLink to="services">Services</NavLink>
+			<NavLink to="about">About</NavLink>
+		</nav>
+	</Router>
 </main>
 
-<nav>
-	<button class="{current === 'home' ? 'active' : ''}" on:click="{() => tae('home')}">
-		<span>Home</span>
-	</button>
-	<button class="{current === 'projects' ? 'active' : ''}" on:click="{() => tae('projects')}">
-		<span>Projects</span>
-	</button>
-	<button class="{current === 'services' ? 'active' : ''}" on:click="{() => tae('services')}">
-		<span>Services</span>
-	</button>
-	<button class="{current === 'about' ? 'active' : ''}" on:click="{() => tae('about')}">
-		<span>About</span>
-	</button>
-</nav>
 
 <style>
 	main {
