@@ -1,6 +1,8 @@
 <script>
     import Modal from '../components/Modal.svelte';
-    import { Link } from "svelte-routing";
+    // import Project from '../components/Project.svelte';
+    import { navigate, Link } from "svelte-routing";
+
 
 	let showModal = false;
     let ModalContents = [
@@ -13,30 +15,42 @@
     export let projects;
     export let apiHost;
 
+    function changeUrl() {
+        console.log('test');
+        
+    };
+
+    function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
+    console.log(location)
+    console.log(href)
+    console.log(isPartiallyCurrent)
+    console.log(isCurrent)
+  }
+
     
 </script>
 
-<main>
+<section class="wrap">
     <h1>PROJECTS</h1>
     <p>Featured projects I’ve worked with.</p>
-    <!-- <ul>
-        <li>Featured</li>
-        <li>3D Modelling</li>
-        <li>Product Visualizations</li>
-        <li>Web and Graphics</li>
-        <li>Graphic Designs</li>
-        <li>Motion Graphics</li>
-    </ul> -->
-    <section>
+
+    <section class="projects-wrap">
 
     {#each projects as project}
 
-        <figure on:click="{() => { 
-            showModal = true, 
-            ModalContents.title = project.title,
-            ModalContents.published = project.published,
-            ModalContents.content = project.content
-        }}">
+        <Link to="/projects/{project.slug}" state="hello world">
+            {project.title}
+        </Link>
+
+        <!-- <figure on:click="{() => {
+                showModal = true, 
+                ModalContents.title = project.title,
+                ModalContents.published = project.published,
+                ModalContents.content = project.content
+
+
+                changeUrl()
+            }}">
             <div class="thumbnail">
                 <img src={apiHost + project.thumbnail.path} alt={project.title}>
             </div>
@@ -44,11 +58,11 @@
                 <h3>{project.title}</h3>
                 <span>{project.published}</span>
             </div>
-        </figure>
+        </figure> -->
 
     {:else}
 		<!-- this block renders when photos.length === 0 -->
-		<p>loading...</p>
+		<p>loading projects...</p>
 	{/each}
 
     {#if showModal}
@@ -60,10 +74,10 @@
     {/if}
    
     </section>
-</main>
+</section>
 
 <style>
-section {
+section.projects-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
@@ -82,7 +96,7 @@ figure {
     overflow: hidden;
     border: 1px solid #212528;
     background: #161a1f;
-    height: 90px;
+    height: 210px;
 }
 img {
     width: 100%;
