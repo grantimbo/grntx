@@ -1,31 +1,42 @@
 <script>
     import Modal from '../components/Modal.svelte';
-    // import Project from '../components/Project.svelte';
-    import { navigate, Link } from "svelte-routing";
-
-
-	let showModal = false;
-    let ModalContents = [
-        {title: null},
-        {thumbnail: null},
-        {content: null},
-        {slug: null}
-    ]
+    import { Link } from "svelte-routing";
 
     export let projects;
     export let apiHost;
+    export let slug;
 
-    function changeUrl() {
-        console.log('test');
+    let showModal = false;
+    let post;
+
+    if (slug) {
         
-    };
+        let showModal = true;
 
-    function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
-    console.log(location)
-    console.log(href)
-    console.log(isPartiallyCurrent)
-    console.log(isCurrent)
-  }
+        // filter project and match the slug
+        post = projects.find(p => p.slug == slug)
+
+
+        // needs refinement
+        // let newContent = post.content
+
+        // // replace image souce
+        // let replace = 'src="/'
+        // let replaceWith = 'src="' + apiHost;
+        // let reg = new RegExp(replace, "g");
+        // newContent = newContent.replace(reg, replaceWith)
+
+        // console.log(newContent)
+        
+        
+    }
+
+	
+
+    
+    
+
+
 
     
 </script>
@@ -38,42 +49,36 @@
 
     {#each projects as project}
 
-        <Link to="/projects/{project.slug}" state="hello world">
-            {project.title}
+        <Link to="/projects/{project.slug}">
+            <figure>
+                <div class="thumbnail">
+                    <img src={apiHost + project.thumbnail.path} alt={project.title}>
+                </div>
+                <div class="details">
+                    <h3>{project.title}</h3>
+                    <span>{project.published}</span>
+                </div>
+            </figure>
         </Link>
 
-        <!-- <figure on:click="{() => {
-                showModal = true, 
-                ModalContents.title = project.title,
-                ModalContents.published = project.published,
-                ModalContents.content = project.content
-
-
-                changeUrl()
-            }}">
-            <div class="thumbnail">
-                <img src={apiHost + project.thumbnail.path} alt={project.title}>
-            </div>
-            <div class="details">
-                <h3>{project.title}</h3>
-                <span>{project.published}</span>
-            </div>
-        </figure> -->
-
     {:else}
-		<!-- this block renders when photos.length === 0 -->
-		<p>loading projects...</p>
-	{/each}
-
-    {#if showModal}
-        <Modal on:close="{() => showModal = false}">
-            <h2 slot="header">{ModalContents.title}</h2>
-            <p>{ModalContents.published}</p>
-            <div class="content">{@html ModalContents.content}</div>
-        </Modal>
-    {/if}
+        <!-- this block renders when photos.length === 0 -->
+        <p>loading projects...</p>
+    {/each}
+    
    
     </section>
+
+
+    {#if slug}
+
+        <Modal on:close="{() => showModal = false}">
+            <h2 slot="header">{post.title}</h2>
+            <p>{post.published}</p>
+            <div class="content">{@html post.content}</div>
+        </Modal>
+
+    {/if}
 </section>
 
 <style>
@@ -96,7 +101,7 @@ figure {
     overflow: hidden;
     border: 1px solid #212528;
     background: #161a1f;
-    height: 210px;
+    height: 180px;
 }
 img {
     width: 100%;
@@ -108,8 +113,17 @@ img {
     bottom: 0;
     width: 100%;
     padding: 1rem;
+    background: linear-gradient(0deg, #000000b8, transparent);
+    color: #fff;
 }
-
+.details h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.details span {
+    font-size: 12px;
+}
 
 
 
