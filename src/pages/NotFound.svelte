@@ -1,8 +1,11 @@
+<script>
+    import { Link } from "svelte-routing";
+</script>
 
 <section>
     <div>
-        <h1>404 not found</h1>
-        <p>Seems like your lost</p>
+        <h1>404 Not Found</h1>
+        <p>Seems like you're lost. Go back <link to="/">Home<Link/></p>
     </div>
 </section>
 
@@ -10,6 +13,11 @@
     section {
         display:flex;
         align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
     }
     div {
         max-width: 500px;
