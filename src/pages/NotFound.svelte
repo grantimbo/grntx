@@ -5,7 +5,7 @@
 <section>
     <div>
         <h1>404 Not Found</h1>
-        <p>Seems like you're lost. Go back <link to="/">Home<Link/></p>
+        <p>Seems like you're lost. Please Go back <Link to="/">Home</Link></p>
     </div>
 </section>
 
