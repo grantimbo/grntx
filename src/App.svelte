@@ -34,7 +34,7 @@
 	<Router>
 		<Route path="/"><Home /></Route>
 		<Route path="projects"><Projects {projects} {apiHost}/></Route>
-		<Route path="projects/*" let:params><Projects {apiHost} {projects} slug="{params.slug}"/></Route>
+		<Route path="projects/:slug" let:params><Projects {apiHost} {projects} slug="{params.slug}"/></Route>
 		<Route path="services"><Services/></Route>
 		<Route path="about"><About/></Route>
 		<Route><NotFound/></Route>
