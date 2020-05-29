@@ -9,36 +9,21 @@
     let showModal = false;
     let post;
 
+    // check if page has a slug
     if (slug) {
-        
         let showModal = true;
-
-        // filter project and match the slug
         post = projects.find(p => p.slug == slug)
-
-
-        // needs refinement
-        // let newContent = post.content
-
-        // // replace image souce
-        // let replace = 'src="/'
-        // let replaceWith = 'src="' + apiHost;
-        // let reg = new RegExp(replace, "g");
-        // newContent = newContent.replace(reg, replaceWith)
-
-        // console.log(newContent)
-        
-        
     }
 
-	
+    // replace url
+    function replaceUrl(content) {
+        let replace = 'src="/'
+        let replaceWith = 'src="' + apiHost;
+        let reg = new RegExp(replace, "g");
+        let newContent = content.replace(reg, replaceWith)
+        return newContent;
+    }
 
-    
-    
-
-
-
-    
 </script>
 
 <section class="wrap">
@@ -75,58 +60,53 @@
         <Modal on:close="{() => showModal = false}">
             <h2 slot="header">{post.title}</h2>
             <p>{post.published}</p>
-            <div class="content">{@html post.content}</div>
+            <div class="content">{@html replaceUrl(post.content)}</div>
         </Modal>
 
     {/if}
 </section>
 
 <style>
-section.projects-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-figure {
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-.thumbnail {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #212528;
-    background: #161a1f;
-    height: 180px;
-}
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.details {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    background: linear-gradient(0deg, #000000b8, transparent);
-    color: #fff;
-}
-.details h3 {
-    margin-bottom: 0;
-    font-size: 16px;
-    font-weight: bold;
-}
-.details span {
-    font-size: 12px;
-}
-
-
-
-
-
+    section.projects-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    figure {
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    .thumbnail {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #212528;
+        background: #161a1f;
+        height: 180px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .details {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(0deg, #000000b8, transparent);
+        color: #fff;
+    }
+    .details h3 {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .details span {
+        font-size: 12px;
+    }
 </style>

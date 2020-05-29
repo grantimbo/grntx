@@ -1,16 +1,14 @@
 <script>
 	import { Router, Route } from "svelte-routing";
-	import Projects from './pages/Projects.svelte';
-	import Project from './pages/Project.svelte';
-	import Services from './pages/Services.svelte';
-	import NotFound from './pages/NotFound.svelte';
-	import About from './pages/About.svelte';
 	import Home from './pages/Home.svelte';
+	import Projects from './pages/Projects.svelte';
+	import Services from './pages/Services.svelte';
+	import About from './pages/About.svelte';
+	import NotFound from './pages/NotFound.svelte';
 	import NavLink from './components/Navlink.svelte';
 	import { onMount } from 'svelte';
 
 	let projects = [];
-	let activeSlug = null;
 	
 	// production api
 	let apiHost = `https://grantimbocom.ipage.com/`;
@@ -29,15 +27,13 @@
 	// 	projects = projects.entries;
 	// });
 	
-	export let url = "";
 
 </script>
 
 <main>
-	<Router url="{url}">
+	<Router>
 		<Route path="/"><Home /></Route>
 		<Route path="projects"><Projects {projects} {apiHost}/></Route>
-		<!-- <Route path="projects/:slug" let:params><Project projects={projects} slug="{params.slug}"/></Route> -->
 		<Route path="projects/:slug" let:params><Projects {apiHost} {projects} slug="{params.slug}"/></Route>
 		<Route path="services"><Services/></Route>
 		<Route path="about"><About/></Route>
