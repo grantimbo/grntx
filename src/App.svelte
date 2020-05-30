@@ -11,10 +11,10 @@
 	let projects = [];
 	
 	// production api
-	let apiHost = `https://grantimbocom.ipage.com/`;
+	let apiHost = `https://grantimbo.com/`;
 
 	onMount(async () => {
-        const res = await fetch( apiHost + `grntx-api/api/collections/get/projects?token=account-ed31d41ed4c887f51e09ec138ace24`);
+        const res = await fetch( apiHost + `grntx/api/collections/get/projects?token=account-ed31d41ed4c887f51e09ec138ace24`);
 		projects = await res.json();
 		projects = projects.entries;
 	});
