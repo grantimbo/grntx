@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <section class="wrap">
 	<h1>ABOUT</h1>
 	<p>A brief history where I’ve worked</p>

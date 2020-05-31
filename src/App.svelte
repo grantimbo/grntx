@@ -1,49 +1,8 @@
 <script>
-	import { Router, Route } from "svelte-routing";
-	import Home from './pages/Home.svelte';
-	import Projects from './pages/Projects.svelte';
-	import Services from './pages/Services.svelte';
-	import About from './pages/About.svelte';
-	import NotFound from './pages/NotFound.svelte';
-	import NavLink from './components/Navlink.svelte';
-	import { onMount } from 'svelte';
-
-	let projects = [];
-	
-	// production api
-	let apiHost = `https://grantimbo.com/`;
-
-	onMount(async () => {
-        const res = await fetch( apiHost + `grntx/api/collections/get/projects?token=account-ed31d41ed4c887f51e09ec138ace24`);
-		projects = await res.json();
-		projects = projects.entries;
-	});
-
-	// // local api
-	// let apiHost = `http://localhost/`;
-	// onMount(async () => {
-    //     const res = await fetch( apiHost + `cockpit/api/collections/get/projects`);
-	// 	projects = await res.json();
-	// 	projects = projects.entries;
-	// });
-	
-
+	import { Router } from "@sveltech/routify";
+	import { routes } from "@sveltech/routify/tmp/routes";
 </script>
 
 <main>
-	<Router>
-		<Route path="/"><Home /></Route>
-		<Route path="projects"><Projects {projects} {apiHost}/></Route>
-		<Route path="projects/:slug" let:params><Projects {apiHost} {projects} slug="{params.slug}"/></Route>
-		<Route path="services"><Services/></Route>
-		<Route path="about"><About/></Route>
-		<Route><NotFound/></Route>
-
-		<nav>
-			<NavLink to="/"><span>Home</span></NavLink>
-			<NavLink to="projects"><span>Projects</span></NavLink>
-			<NavLink to="services"><span>Services</span></NavLink>
-			<NavLink to="about"><span>About</span></NavLink>
-		</nav>
-	</Router>
+	<Router {routes} />
 </main>

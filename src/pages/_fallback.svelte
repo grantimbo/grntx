@@ -1,11 +1,12 @@
 <script>
-    import { Link } from "svelte-routing";
+    import { url } from '@sveltech/routify'
 </script>
+
 
 <section>
     <div>
         <h1>404 Not Found</h1>
-        <p>Seems like you're lost. Please Go back <Link to="/">Home</Link></p>
+        <p>Seems like you're lost. Please Go back</p>
     </div>
 </section>
 

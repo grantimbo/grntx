@@ -1,28 +1,38 @@
 <script>
-    import Modal from '../components/Modal.svelte';
-    import { Link } from "svelte-routing";
+    // import Modal from '../components/Modal.svelte';
+    import { onMount } from 'svelte';
+    import { url } from '@sveltech/routify';
 
-    export let projects;
-    export let apiHost;
-    export let slug;
+	let projects = [];
+	
+	// production api
+	let apiHost = `https://grantimbo.com/`;
 
-    let showModal = false;
-    let post;
+	onMount(async () => {
+        const res = await fetch( apiHost + `grntx/api/collections/get/projects?token=account-ed31d41ed4c887f51e09ec138ace24`);
+		projects = await res.json();
+		projects = projects.entries;
+	});
 
-    // check if page has a slug
-    if (slug) {
-        let showModal = true;
-        post = projects.find(p => p.slug == slug)
-    }
+	// // local api
+	// let apiHost = `http://localhost/`;
+	// onMount(async () => {
+    //     const res = await fetch( apiHost + `cockpit/api/collections/get/projects`);
+	// 	projects = await res.json();
+	// 	projects = projects.entries;
+	// });
+
+
+    // let showModal = false;
 
     // replace url
-    function replaceUrl(content) {
-        let replace = 'src="/'
-        let replaceWith = 'src="' + apiHost;
-        let reg = new RegExp(replace, "g");
-        let newContent = content.replace(reg, replaceWith)
-        return newContent;
-    }
+    // function replaceUrl(content) {
+    //     let replace = 'src="/'
+    //     let replaceWith = 'src="' + apiHost;
+    //     let reg = new RegExp(replace, "g");
+    //     let newContent = content.replace(reg, replaceWith)
+    //     return newContent;
+    // }
 
 </script>
 
@@ -34,7 +44,7 @@
 
     {#each projects as project}
 
-        <Link to="/projects/{project.slug}">
+        <a href={$url('/projects/:slug', {slug: project.slug})}>
             <figure>
                 <div class="thumbnail">
                     <img src={apiHost + project.thumbnail.path} alt={project.title}>
@@ -44,7 +54,7 @@
                     <span>{project.published}</span>
                 </div>
             </figure>
-        </Link>
+        </a>
 
     {:else}
         <!-- this block renders when photos.length === 0 -->
@@ -55,7 +65,7 @@
     </section>
 
 
-    {#if slug}
+    <!-- {#if slug}
 
         <Modal on:close="{() => showModal = false}">
             <h2 slot="header">{post.title}</h2>
@@ -63,7 +73,7 @@
             <div class="content">{@html replaceUrl(post.content)}</div>
         </Modal>
 
-    {/if}
+    {/if} -->
 </section>
 
 <style>

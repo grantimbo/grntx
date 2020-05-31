@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <section class="wrap">
 	<h1>SERVICES</h1>
 	<p>A few lists of services I provide.</p>

@@ -1,14 +1,15 @@
 <script>
-    import { Link } from "svelte-routing";
+    import Nav from './_components/Nav.svelte';
 </script>
 
 <section>
     <article class="home">
         <h1>Hello. I'm Grant</h1>
         <p>My name is Grant Imbo. I'm a multimedia artist creating cool stuff across the web and a developer focusing mainly on front-end.</p>
-        <Link to="/projects">Featured Projects</Link>
     </article>
+    <Nav />
 </section>
+
 
 <style>
     section {
