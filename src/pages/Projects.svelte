@@ -1,8 +1,8 @@
 <script>
     import Modal from '../components/Modal.svelte';
-    import { Link } from "svelte-routing";
+    import { projects } from "../_projects";
+    import { navigate, Link } from "svelte-routing";
 
-    export let projects;
     export let apiHost;
     export let slug;
 
@@ -13,6 +13,10 @@
     if (slug) {
         let showModal = true;
         post = projects.find(p => p.slug == slug)
+
+        if (!post) {
+            navigate("/404", { replace: true });
+        }
     }
 
     // replace url
@@ -27,7 +31,7 @@
 </script>
 
 <section class="wrap">
-    <h1>PROJECTS</h1>
+    <h1>Projects</h1>
     <p>Featured projects I’ve worked with.</p>
 
     <section class="projects-wrap">
@@ -37,11 +41,11 @@
         <Link to="/projects/{project.slug}">
             <figure>
                 <div class="thumbnail">
-                    <img src={apiHost + project.thumbnail.path} alt={project.title}>
+                    <img src={project.thumbnail} alt={project.title}>
                 </div>
                 <div class="details">
                     <h3>{project.title}</h3>
-                    <span>{project.published}</span>
+                    <span>{project.date}</span>
                 </div>
             </figure>
         </Link>
@@ -55,11 +59,11 @@
     </section>
 
 
-    {#if slug}
+    {#if post}
 
         <Modal on:close="{() => showModal = false}">
             <h2 slot="header">{post.title}</h2>
-            <p>{post.published}</p>
+            <p>{post.date}</p>
             <div class="content">{@html replaceUrl(post.content)}</div>
         </Modal>
 
@@ -67,12 +71,15 @@
 </section>
 
 <style>
+    h1 {
+        margin: 0;
+    }
     section.projects-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1rem;
         max-width: 1280px;
-        margin: 0 auto;
+        margin: 40px auto 0;
     }
     figure {
         border-radius: 4px;

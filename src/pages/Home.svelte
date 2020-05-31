@@ -21,9 +21,6 @@
         text-align: center;
         margin: 0 auto;
     }
-    h1 {
-        font-size: 2rem;
-    }
     p {
         margin-bottom: 1rem;
     }

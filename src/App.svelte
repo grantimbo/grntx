@@ -6,18 +6,18 @@
 	import About from './pages/About.svelte';
 	import NotFound from './pages/NotFound.svelte';
 	import NavLink from './components/Navlink.svelte';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 
-	let projects = [];
+	// let projects = [];
 	
-	// production api
+	// // production api
 	let apiHost = `https://grantimbo.com/`;
 
-	onMount(async () => {
-        const res = await fetch( apiHost + `grntx/api/collections/get/projects?token=account-ed31d41ed4c887f51e09ec138ace24`);
-		projects = await res.json();
-		projects = projects.entries;
-	});
+	// onMount(async () => {
+    //     const res = await fetch( apiHost + `grntx/api/collections/get/projects?token=account-ed31d41ed4c887f51e09ec138ace24`);
+	// 	projects = await res.json();
+	// 	projects = projects.entries;
+	// });
 
 	// // local api
 	// let apiHost = `http://localhost/`;
@@ -33,8 +33,8 @@
 <main>
 	<Router>
 		<Route path="/"><Home /></Route>
-		<Route path="projects"><Projects {projects} {apiHost}/></Route>
-		<Route path="projects/:slug" let:params><Projects {apiHost} {projects} slug="{params.slug}"/></Route>
+		<Route path="projects"><Projects {apiHost}/></Route>
+		<Route path="projects/:slug" let:params><Projects {apiHost} slug="{params.slug}"/></Route>
 		<Route path="services"><Services/></Route>
 		<Route path="about"><About/></Route>
 		<Route><NotFound/></Route>
