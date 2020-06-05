@@ -15,7 +15,7 @@
         post = projects.find(p => p.slug == slug)
 
         if (!post) {
-            navigate("/projects", { replace: true });
+            window.location.href = window.location.origin + "/404";
         }
     }
 
