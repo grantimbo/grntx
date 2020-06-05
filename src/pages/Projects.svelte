@@ -15,7 +15,7 @@
         post = projects.find(p => p.slug == slug)
 
         if (!post) {
-            navigate("/404", { replace: true });
+            navigate("/projects", { replace: true });
         }
     }
 
