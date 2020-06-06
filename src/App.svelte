@@ -2,10 +2,10 @@
 	import { Router, Route } from "svelte-routing";
 	import Home from './pages/Home.svelte';
 	import Projects from './pages/Projects.svelte';
+	import Category from './pages/Category.svelte';
 	import Services from './pages/Services.svelte';
 	import About from './pages/About.svelte';
 	import NotFound from './pages/NotFound.svelte';
-	import NavLink from './components/Navlink.svelte';
 	// import { onMount } from 'svelte';
 
 	// let projects = [];
@@ -34,16 +34,10 @@
 	<Router>
 		<Route path="/"><Home /></Route>
 		<Route path="projects"><Projects {apiHost}/></Route>
+		<Route path="project"><Category {apiHost}/></Route>
 		<Route path="projects/:slug" let:params><Projects {apiHost} slug="{params.slug}"/></Route>
 		<Route path="services"><Services/></Route>
 		<Route path="about"><About/></Route>
 		<Route><NotFound/></Route>
-
-		<nav>
-			<NavLink to="/"><span>Home</span></NavLink>
-			<NavLink to="projects"><span>Projects</span></NavLink>
-			<NavLink to="services"><span>Services</span></NavLink>
-			<NavLink to="about"><span>About</span></NavLink>
-		</nav>
 	</Router>
 </main>

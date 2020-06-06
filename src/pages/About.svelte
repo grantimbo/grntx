@@ -1,3 +1,7 @@
+<script>
+import NavBar from '../components/NavBar.svelte';
+</script>
+
 <section class="wrap">
 	<article>
 		<h1>About</h1>
@@ -30,6 +34,9 @@
 		<p>Or just want to be friends?  Find me online on most digital platforms @grantimbo or @grntx or by clicking the links below. </p>
 	</article>
 </section>
+
+<NavBar />
+
 <style>
 article {
 	max-width: 500px;

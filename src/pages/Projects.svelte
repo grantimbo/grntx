@@ -70,22 +70,28 @@
     {/if}
 </section>
 
+<nav class="project-cat">
+    <Link to="project/featured" ><div><i class="icon-all"></i> <span>Featured</span></div></Link>
+    <Link to="project/typography"><div><i class="icon-coffee"></i> <span>Typograhpy</span></div></Link>
+    <Link to="project/motion-graphics"><div><i class="icon-motion"></i> <span>Motion</span></div></Link>
+    <Link to="project/webdev"><div><i class="icon-webdev"></i> <span>Websites</span></div></Link>
+    <Link to="project/corporate"><div><i class="icon-suitcase"></i><span>Corporate</span></div></Link>
+    <Link to="project/others"><div><i class="icon-others"></i> <span>Others</span></div></Link>
+    <Link to="project/info"><div><i class="icon-hand-peace-o"></i> <span>Info</span></div></Link>
+</nav>
+
 <style>
     h1 {
         margin: 0;
     }
     section.projects-wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        max-width: 1280px;
-        margin: 40px auto 0;
+        display: block;
+        margin: 2rem auto 0;
     }
     figure {
-        border-radius: 4px;
         overflow: hidden;
         position: relative;
-        margin: 0;
+        margin: 0 0 1.2rem 0;
         padding: 0;
     }
     .thumbnail {
@@ -115,5 +121,50 @@
     }
     .details span {
         font-size: 12px;
+    }
+
+    /* project-cat nav */
+    nav {
+        position: fixed;
+        background: #000;
+        bottom: 0;
+        width: 100vw;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    nav div {
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    nav span {
+        display: none;
+    }
+
+    /* media query */
+    @media (min-width: 540px) {
+        section.projects-wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+        figure {
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        section.projects-wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 992px) {
+        section.projects-wrap {
+            max-width: 1280px;
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 </style>
