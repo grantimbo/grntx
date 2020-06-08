@@ -6,18 +6,24 @@
     export let apiHost;
     export let slug;
 
+    let currentTab = 'featured';
     let showModal = false;
     let post;
-
-    // check if page has a slug
+    
+    // if single post
     if (slug) {
-        let showModal = true;
-        post = projects.find(p => p.slug == slug)
+        showModal = true;
+        post = projects.find(p => p.slug == slug);
 
         if (!post) {
             window.location.href = window.location.origin + "/404";
         }
     }
+    
+    // filter projects
+    $: filteredProjects = projects.filter(p => {
+        return p.tags.find(t => t == currentTab)
+    })
 
     // replace url
     function replaceUrl(content) {
@@ -27,16 +33,24 @@
         let newContent = content.replace(reg, replaceWith)
         return newContent;
     }
+    // let tae;
+    // $: tae = currentTab;
+
+    function changeTab(e) {
+        currentTab = e;
+    }
+
+    
 
 </script>
 
-<section class="wrap">
+<section class="project-wrap">
     <h1>Projects</h1>
     <p>Featured projects I’ve worked with.</p>
 
-    <section class="projects-wrap">
+    <section class="projects-list">
 
-    {#each projects as project}
+    {#each filteredProjects as project}
 
         <Link to="/projects/{project.slug}">
             <figure>
@@ -45,14 +59,14 @@
                 </div>
                 <div class="details">
                     <h3>{project.title}</h3>
-                    <span>{project.date}</span>
+                    <!-- <span>{project.date}</span> -->
                 </div>
             </figure>
         </Link>
 
     {:else}
         <!-- this block renders when photos.length === 0 -->
-        <p>loading projects...</p>
+        <p>No projects found</p>
     {/each}
     
    
@@ -71,20 +85,25 @@
 </section>
 
 <nav class="project-cat">
-    <Link to="project/featured" ><div><i class="icon-all"></i> <span>Featured</span></div></Link>
-    <Link to="project/typography"><div><i class="icon-coffee"></i> <span>Typograhpy</span></div></Link>
-    <Link to="project/motion-graphics"><div><i class="icon-motion"></i> <span>Motion</span></div></Link>
-    <Link to="project/webdev"><div><i class="icon-webdev"></i> <span>Websites</span></div></Link>
-    <Link to="project/corporate"><div><i class="icon-suitcase"></i><span>Corporate</span></div></Link>
-    <Link to="project/others"><div><i class="icon-others"></i> <span>Others</span></div></Link>
-    <Link to="project/info"><div><i class="icon-hand-peace-o"></i> <span>Info</span></div></Link>
+    <button class="{currentTab === 'featured' ? 'active' : ''}" on:click="{() => changeTab('featured')}"><i class="icon-all"></i> <span>Featured</span></button>
+    <button class="{currentTab === 'typography' ? 'active' : ''}" on:click="{() => changeTab('typography')}"><i class="icon-coffee"></i> <span>Typograhpy</span></button>
+    <button class="{currentTab === 'motion' ? 'active' : ''}" on:click="{() => changeTab('motion')}"><i class="icon-motion"></i> <span>Motion</span></button>
+    <button class="{currentTab === 'websites' ? 'active' : ''}" on:click="{() => changeTab('websites')}"><i class="icon-webdev"></i> <span>Websites</span></button>
+    <button class="{currentTab === 'corporate' ? 'active' : ''}" on:click="{() => changeTab('corporate')}"><i class="icon-suitcase"></i><span>Corporate</span></button>
+    <button class="{currentTab === 'others' ? 'active' : ''}" on:click="{() => changeTab('others')}"><i class="icon-others"></i> <span>Others</span></button>
+    <button class="{currentTab === 'info' ? 'active' : ''}" on:click="{() => changeTab('info')}"><i class="icon-hand-peace-o"></i> <span>Info</span></button>
 </nav>
 
 <style>
+    .project-wrap {
+        padding: 0 20px 0 75px;
+    }
+
+
     h1 {
         margin: 0;
     }
-    section.projects-wrap {
+    .projects-list {
         display: block;
         margin: 2rem auto 0;
     }
@@ -119,33 +138,12 @@
         font-size: 16px;
         font-weight: bold;
     }
-    .details span {
-        font-size: 12px;
-    }
 
-    /* project-cat nav */
-    nav {
-        position: fixed;
-        background: #000;
-        bottom: 0;
-        width: 100vw;
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-columns: repeat(7, 1fr);
-    }
-    nav div {
-        color: #fff;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-    }
-    nav span {
-        display: none;
-    }
+    
 
     /* media query */
     @media (min-width: 540px) {
-        section.projects-wrap {
+        .projects-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1rem;
@@ -156,15 +154,24 @@
     }
 
     @media (min-width: 768px) {
-        section.projects-wrap {
+        .projects-list {
             grid-template-columns: repeat(3, 1fr);
         }
     }
 
     @media (min-width: 992px) {
-        section.projects-wrap {
-            max-width: 1280px;
+        .project-wrap {
+            padding-left: 180px;
+        }
+        .projects-list {
             grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (min-width: 1600px) {
+        
+        .projects-list {
+            grid-template-columns: repeat(5, 1fr);
         }
     }
 </style>
