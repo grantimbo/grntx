@@ -1,5 +1,21 @@
 export const projects = [
     {
+        title: 'KMC Booth',
+        slug: 'kmc-booth',
+        date: 'Jan 2020',
+        tags: ['modelling','motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2020/kmcbooth/kmcbooth-thumb.jpg',
+        content: `content`
+    },
+    {
+        title: 'Avidlife',
+        slug: 'adivlife',
+        date: 'Jan 2020',
+        tags: ['modelling','motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2020/avidlife/avidlife-thumb.jpg',
+        content: `content`
+    },
+    {
         title: 'Silver Dark NSX',
         slug: 'silverdarknsx',
         date: 'July 2019',
@@ -154,7 +170,7 @@ export const projects = [
     {
         title: 'GEARS',
         slug: 'gears',
-        date: 'July 2015',
+        date: 'Dec 2019',
         tags: ['featured', 'motion'],
         thumbnail: 'https://assets.grantimbo.com/projects/2019/gears/gears-thumb.jpg',
         content: `
@@ -183,6 +199,14 @@ export const projects = [
         <img src="https://assets.grantimbo.com/projects/2019/gears/gears-8.jpg">
         <img src="https://assets.grantimbo.com/projects/2019/gears/gears-9.jpg">
         `
+    },
+    {
+        title: 'Eglaf',
+        slug: 'eglaf',
+        date: 'Sept 2017',
+        tags: ['motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2017/eglaf/eglaf-thumb.jpg',
+        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/A8b13SymeCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     },
     {
         title: 'Chada Valencia',
@@ -226,36 +250,120 @@ export const projects = [
         <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-7.jpg ">
         `
     },
-    
     {
-        title: 'Product Renders',
-        slug: 'product-renders',
+        title: 'S Type',
+        slug: 's-type',
         date: 'July 2017',
         tags: ['typography'],
-        thumbnail: 'https://assets.grantimbo.com/projects/2017/productrenders/productrenders-thumb.jpg',
-        content: `wide evo`
-    },
-    {
-        title: 'LiquiPal Product Visualization',
-        slug: 'liquipal',
-        date: 'July 2014',
-        tags: ['product render'],
-        thumbnail: 'https://assets.grantimbo.com/projects/2019/liquipal-grantimbo-thumb.jpg',
+        thumbnail: 'https://assets.grantimbo.com/projects/2017/stype/s-type-thumb.jpg',
         content: `
-        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_header.png">
-        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_preview_01.jpg">
-        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_preview.jpg">
-        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_preview_02.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/stype/s-type-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/stype/s-type-2.jpg">
         `
     },
-    
     {
-        title: 'Abstract Renders',
-        slug: 'abstract-renders',
-        date: 'July 2015',
-        tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/grantimbo-abstract-renders-thumb.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/metabol-864x1080.jpg"> `
+        title: 'Metabol',
+        slug: 'metabol',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/metabol-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/metabol.jpg"> `
+    },
+    {
+        title: 'Pinktree',
+        slug: 'pinktree',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/pinktree-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/pinktree.jpg"> `
+    },
+    {
+        title: 'splash',
+        slug: 'splash',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/splash-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/splash.jpg"> `
+    },
+    {
+        title: 'rotate',
+        slug: 'rotate',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/rotate-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/rotate.jpg"> `
+    },
+    {
+        title: 'ripple',
+        slug: 'ripple',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/ripple-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/ripple.jpg"> `
+    },
+    {
+        title: 'pointcube',
+        slug: 'pointcube',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/pointcube-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/pointcube.jpg"> `
+    },
+    {
+        title: 'orba',
+        slug: 'orba',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/orba-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/orba.jpg"> `
+    },
+    {
+        title: 'infiniteswirl',
+        slug: 'infiniteswirl',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/infiniteswirl-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/infiniteswirl.jpg"> `
+    },
+    {
+        title: 'eww',
+        slug: 'eww',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/eww-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/eww.jpg"> `
+    },
+    {
+        title: 'cylinswirl',
+        slug: 'cylinswirl',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/cylinswirl-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/cylinswirl.jpg"> `
+    },
+    {
+        title: 'cubi',
+        slug: 'cubi',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/cubi-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/cubi.jpg"> `
+    },
+    {
+        title: 'bubbles',
+        slug: 'bubbles',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/bubbles-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/bubbles.jpg"> `
+    },
+    {
+        title: 'tuby',
+        slug: 'tuby',
+        date: 'March 2016',
+        tags: ['abstract'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2016/abstractrenders/tuby-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2016/abstractrenders/tuby.jpg"> `
     },
     {
         title: 'KTM Model',
@@ -278,7 +386,7 @@ export const projects = [
         slug: 'do-it-now',
         date: 'July 2015',
         tags: ['typography'],
-        thumbnail: 'https://assets.grantimbo.com/projects/2015/doitnow/doitnow-thumb.jpg',
+        thumbnail: 'https://assets.grantimbo.com/projects/2015/doitnow/do-it-now-thumb.jpg',
         content: `
         <img src="https://assets.grantimbo.com/projects/2015/doitnow/doitnow-1.jpg">
         <img src="https://assets.grantimbo.com/projects/2015/doitnow/doitnow-2.jpg">
@@ -306,6 +414,14 @@ export const projects = [
         tags: ['typography'],
         thumbnail: 'https://assets.grantimbo.com/projects/2014/lifegoeson/lifegoeson-thumb.jpg',
         content: `<img src="https://assets.grantimbo.com/projects/2014/lifegoeson/lifegoeson.jpg">`
+    },
+    {
+        title: 'Feel that Sweetness',
+        slug: 'feel-that-sweetness',
+        date: 'September 2014',
+        tags: ['motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2014/feelthatsweetness/feelthatsweetness-thumb.jpg',
+        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/uXwCt_LfeLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     },
     {
         title: 'Type G',

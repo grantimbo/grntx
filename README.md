@@ -1,3 +1,3 @@
 # Personal Website done in Svelte
 
-https://grntx.now.sh/
+https://grntx.grantimbo.com/
