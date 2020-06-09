@@ -5,8 +5,9 @@
 <section>
     <article class="home">
         <h1>Hello. I'm Grant</h1>
-        <p>My name is Grant Imbo. I'm a multimedia artist creating cool stuff across the web and a developer focusing mainly on front-end.</p>
-        <Link to="/projects">Featured Projects</Link>
+        <p>I'm a multimedia artist creating cool stuff across the web and a developer focusing mainly on front-end.</p>
+        <Link to="/projects">All Projects</Link>
+        <Link to="/project-type/featured">Featured</Link>
     </article>
 </section>
 

@@ -33,26 +33,44 @@ export const projects = [
         `
     },
     {
-        title: 'Wide Body Evolution',
-        slug: 'wide-body-evo',
+        title: 'Cyberpunk Evo',
+        slug: 'cyberpunk-evo',
         date: 'July 2019',
-        tags: ['featured', 'modelling'],
+        tags: ['modelling','cars'],
         thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
-        content: `
-        <h1>Motion Design / Title Opener</h1>
-        <iframe title="3D Modelling Timelapse - Custom WIdebody Lancer Evo IV" width="500" height="281" src="https://www.youtube.com/embed/S7XCEfg7tnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-        <p>Tools : Cinema 4D, Octane Render, Photoshop</p>
-        <p>Cyberpunk Style</p>
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-cyberpunk-evo-720x720.jpg">
-        <p>Green Hornet Evo</p>
-        <img src="https://grantimbo.com/wp-content/uploads/green_evo-720x720.png">
-        <p>Shiny Evo</p>
-        <img src="https://grantimbo.com/wp-content/uploads/shiny_evo_02-720x720.jpg">
-        <p>Chinatown Evo</p>
-        <img src="https://grantimbo.com/wp-content/uploads/evo_night-720x720.png">
-        <p>The Blue Evo</p>
-        <img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">
-        `
+        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
+    },
+    {
+        title: 'Green Evo',
+        slug: 'green-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
+        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
+    },
+    {
+        title: 'Shiny Evo',
+        slug: 'shiny-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
+        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
+    },
+    {
+        title: 'Chinatown Evo',
+        slug: 'chinatown-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
+        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
+    },
+    {
+        title: 'The Blue Evo',
+        slug: 'the-blue-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
+        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
     },
     {
         title: 'Photo Manipulations',
@@ -73,21 +91,12 @@ export const projects = [
         <iframe width="626" height="330" src="https://www.youtube.com/embed/pVmUFEQlkwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         `
     },
-    
     {
         title: 'Motion Design Compilation',
         slug: 'motion-compilation',
         date: 'July 2014',
         tags: ['typography'],
         thumbnail: 'https://grantimbo.com/wp-content/uploads/grantimbo-motion-thumb.jpg',
-        content: `keep calm`
-    },
-    {
-        title: 'Slanttex',
-        slug: 'slanttex',
-        date: 'July 2014',
-        tags: ['web dev'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/grantimbo-thumb-slanttex.jpg',
         content: `keep calm`
     },
     {
@@ -106,14 +115,7 @@ export const projects = [
         <img src="https://grantimbo.com/wp-content/uploads/6.jpg">
         `
     },
-    {
-        title: 'Type Compilation',
-        slug: 'type-compilation',
-        date: 'July 2016',
-        tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/type-compilation-thumb.jpg',
-        content: `chada valencia`
-    },
+    
     {
         title: 'Product Visualizations',
         slug: 'product-visualizations',
@@ -170,64 +172,93 @@ export const projects = [
         content: `<img src="https://grantimbo.com/wp-content/uploads/metabol-864x1080.jpg"> `
     },
     {
-        title: 'Life Goes On',
-        slug: 'life-goes-on',
-        date: 'July 2015',
-        tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/lifegoeson-grantimbo-thumb.png',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/behance-bg.jpg">`
-    },
-    {
         title: 'KTM Model',
         slug: 'ktm-model',
         date: 'August 2015',
         tags: ['3d-modelling'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/07-300x188.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/behance-bg.jpg">`
+        thumbnail: 'https://assets.grantimbo.com/projects/2015/ktm/ktm-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-3.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-4.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-5.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-6.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/ktm/ktm-7.jpg">
+        `
     },
     {
         title: 'Do it Now',
         slug: 'do-it-now',
         date: 'July 2015',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/do-it-now-grantimbo-thumb.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/behance-bg.jpg">`
+        thumbnail: 'https://assets.grantimbo.com/projects/2015/doitnow/doitnow-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2015/doitnow/doitnow-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2015/doitnow/doitnow-2.jpg">
+        `
+    },
+    {
+        title: 'Slanttex',
+        slug: 'slanntex',
+        date: 'September 2014',
+        tags: ['3d-modelling'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2014/slanttex/slanttex-thumb.jpg',
+        content: `
+        <p>Demo : <a href="https://grantimbo.github.io/slanttex/">https://grantimbo.github.io/slanttex/</a></p>
+        <p>Repo :  <a href="https://github.com/grantimbo/slanttex">https://github.com/grantimbo/slanttex</a> </p>
+        <img src="https://assets.grantimbo.com/projects/2014/slanttex/slanttex-1.png">
+        <img src="https://assets.grantimbo.com/projects/2014/slanttex/slanttex-2.png">
+        <img src="https://assets.grantimbo.com/projects/2014/slanttex/slanttex-3.png">
+        <img src="https://assets.grantimbo.com/projects/2014/slanttex/slanttex-4.png">
+        `
+    },
+    {
+        title: 'Life Goes On',
+        slug: 'life-goes-on',
+        date: 'October 2014',
+        tags: ['typography'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2014/lifegoeson/lifegoeson-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2014/lifegoeson/lifegoeson.jpg">`
     },
     {
         title: 'Type G',
         slug: 'type-g',
         date: 'September 2014',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/type-g-grantimbo-thumb.png',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/behance-bg.jpg">`
+        thumbnail: 'https://assets.grantimbo.com/projects/2014/typeg/typeg-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2014/typeg/typeg.jpg">`
     },
     {
         title: 'Summer Time',
         slug: 'summer-time',
         date: 'April 2014',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/summer-time-grantimbo-thumb.png',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/behance-bg.jpg">`
+        thumbnail: 'https://assets.grantimbo.com/projects/2014/summertime/summertime-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2014/summertime/summertime.jpg">`
     },
     {
         title: 'Neon Life',
         slug: 'neon-life',
         date: 'April 2014',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/neon-life-grantimbo-thumb.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/neon-life-grantimbo.png"> `
+        thumbnail: 'https://assets.grantimbo.com/projects/2014/neonlife/neonlife-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2014/neonlife/neonlife-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2014/neonlife/neonlife-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2014/neonlife/neonlife-3.jpg">
+        `
     },
     {
         title: 'Keep Calm',
         slug: 'keep-calm',
         date: 'October 2013',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/keep-calm-grantimbo-thumb.png',
+        thumbnail: 'https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-thumb.png',
         content: `
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_header.png">
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_preview_01.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_preview.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_preview_02.jpg">
+        <img src="https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-3.jpg">
         `
     },
     {
@@ -235,8 +266,63 @@ export const projects = [
         slug: 'discipline',
         date: 'July 2013',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/type-g-grantimbo-thumb.png',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/behance-bg.jpg">`
-    }
+        thumbnail: 'https://assets.grantimbo.com/projects/2013/discipline/discipline-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2013/discipline/discipline.jpg">`
+    },
+    {
+        title: 'Type Compilation',
+        slug: 'type-compilation',
+        date: 'July 2016',
+        tags: ['typography'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2012/typecompilation/type-compilation-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-3.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-4.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-5.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-6.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-7.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-8.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-9.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-10.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-11.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-12.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-13.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-14.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-15.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-16.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-17.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-18.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-19.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-20.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-21.jpg">
+        <img src="https://assets.grantimbo.com/projects/2012/typecompilation/typecomp-22.jpg">
+        `
+    },
+    {
+        title: 'The Epic',
+        slug: 'the-epic',
+        date: 'November 2012',
+        tags: ['motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2012/theepic/theepic-thumb.jpg',
+        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/dedLQtYjjvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    },
+    {
+        title: 'Under',
+        slug: 'under',
+        date: 'November 2012',
+        tags: ['motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2012/under/under-thumb.jpg',
+        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/OaUAG2J2hDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    },
+    {
+        title: 'Lost in War',
+        slug: 'lost-in-war',
+        date: 'November 2012',
+        tags: ['motion'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2012/lostinwar/lostinwar-thumb.jpg',
+        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/M1LkLZ7fjeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    },
 
 ]

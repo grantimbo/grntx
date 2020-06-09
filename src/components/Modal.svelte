@@ -4,7 +4,7 @@
   let modal;
 
   function closeModal() {
-    navigate("/projects", { replace: false });
+	window.history.back();
   }
 </script>
 
@@ -29,6 +29,7 @@
 		width: 100%;
 		height: 100%;
 		background: rgba(0,0,0,0.3);
+		z-index: 3;
 	}
 
 	.modal {
@@ -43,6 +44,7 @@
 		padding: 1em;
 		background: #fff;
 		color: #000;
+		z-index: 4;
 	}
 
 	button {
