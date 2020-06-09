@@ -1,10 +1,162 @@
 export const projects = [
     {
+        title: 'Silver Dark NSX',
+        slug: 'silverdarknsx',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2020/silverdarknsx/silverdarknsx-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2020/silverdarknsx/silverdarknsx-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2020/silverdarknsx/silverdarknsx-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2020/silverdarknsx/silverdarknsx-3.jpg">
+        `
+    },
+    {
+        title: 'Wide Integra',
+        slug: 'wide-integra',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/wideintegra/wideintegra-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/wideintegra/wideintegra.jpg">`
+    },
+    {
+        title: 'Speed Maniac',
+        slug: 'speed-maniac',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/speedmaniac/speedmaniac-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/speedmaniac/speedmaniac.jpg">`
+    },
+    {
+        title: 'Neon GSR',
+        slug: 'neon-gsr',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/neongsr/neongsr-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/neongsr/neongsr.jpg">`
+    },
+    {
+        title: 'Road Trip',
+        slug: 'road-trip',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/roadtrip/roadtrip-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/roadtrip/roadtrip.jpg">`
+    },
+    {
+        title: 'Cyberpunk Evo',
+        slug: 'cyberpunk-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/cyberpunkevo/cyberpunkevo-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/cyberpunkevo/cyberpunkevo.jpg">`
+    },
+    {
+        title: 'Green Evo',
+        slug: 'green-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/greenevo/greenevo-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2019/greenevo/greenevo-1.png">
+        <img src="https://assets.grantimbo.com/projects/2019/greenevo/greenevo-2.jpg">
+        <iframe width="910" height="510" src="https://www.youtube.com/embed/S7XCEfg7tnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        `
+    },
+    {
+        title: 'Shiny Evo',
+        slug: 'shiny-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/shinyevo/shinyevo-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/shinyevo/shinyevo.jpg">`
+    },
+    {
+        title: 'Chinatown Evo',
+        slug: 'chinatown-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/chinatownevo/chinatownevo-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/chinatownevo/chinatownevo.jpg">`
+    },
+    {
+        title: 'The Blue Evo',
+        slug: 'the-blue-evo',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/blueevo/blueevo-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/blueevo/blueevo.jpg">`
+    },
+    {
+        title: 'Delage',
+        slug: 'delage',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/delage/delage-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/delage/delage.jpg">`
+    },
+    {
+        title: 'Drive By',
+        slug: 'drive-by',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/driveby/driveby-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/driveby/driveby.jpg">`
+    },
+    {
+        title: 'That Supra',
+        slug: 'that-supra',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/thatsupra/thatsupra-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/thatsupra/thatsupra.jpg">`
+    },
+    {
+        title: 'Blue Supra',
+        slug: 'blue-supra',
+        date: 'July 2019',
+        tags: ['modelling','cars'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/bluesupra/bluesupra-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/bluesupra/bluesupra.jpg">`
+    },
+    {
+        title: 'Obscure',
+        slug: 'obscure',
+        date: 'July 2019',
+        tags: ['photomanipulation'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/obscure/obscure-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/obscure/obscure.jpg">`
+    },
+    {
+        title: 'The Room',
+        slug: 'the-room',
+        date: 'July 2019',
+        tags: ['photomanipulation'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/theroom/theroom-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/theroom/theroom.jpg">`
+    },
+    {
+        title: 'Sunrise',
+        slug: 'sunrise',
+        date: 'July 2019',
+        tags: ['photomanipulation'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/sunrise/sunrise-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/sunrise/sunrise.jpg">`
+    },
+    {
+        title: 'Night Life',
+        slug: 'nightlife',
+        date: 'July 2019',
+        tags: ['photomanipulation'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/nightlife/nightlife-thumb.jpg',
+        content: `<img src="https://assets.grantimbo.com/projects/2019/nightlife/nightlife.jpg">`
+    },
+    {
         title: 'GEARS',
         slug: 'gears',
         date: 'July 2015',
         tags: ['featured', 'motion'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/grantimbo-gears-thumb.jpg',
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/gears/gears-thumb.jpg',
         content: `
         <h1>Motion Design / Title Opener</h1>
         <p>Tools : Cinema 4D, Octane Render, Sony Vegas and After Effects.</p>
@@ -21,120 +173,15 @@ export const projects = [
         <iframe title="GEARS - Sound Design" src="https://player.vimeo.com/video/345348115" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
         <p>Sound Design done in Sony Vegas Pro</p>
         <h3>Stills</h3>
-        <img src="https://grantimbo.com/wp-content/uploads/gears-01.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-06.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-05.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-02.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-03.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-04.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-07.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-09.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/gears-08.jpg">
-        `
-    },
-    {
-        title: 'Cyberpunk Evo',
-        slug: 'cyberpunk-evo',
-        date: 'July 2019',
-        tags: ['modelling','cars'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
-    },
-    {
-        title: 'Green Evo',
-        slug: 'green-evo',
-        date: 'July 2019',
-        tags: ['modelling','cars'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
-    },
-    {
-        title: 'Shiny Evo',
-        slug: 'shiny-evo',
-        date: 'July 2019',
-        tags: ['modelling','cars'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
-    },
-    {
-        title: 'Chinatown Evo',
-        slug: 'chinatown-evo',
-        date: 'July 2019',
-        tags: ['modelling','cars'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
-    },
-    {
-        title: 'The Blue Evo',
-        slug: 'the-blue-evo',
-        date: 'July 2019',
-        tags: ['modelling','cars'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/1-6.jpg',
-        content: `<img src="https://grantimbo.com/wp-content/uploads/blue_evo-720x720.png">`
-    },
-    {
-        title: 'Photo Manipulations',
-        slug: 'photo-manipulations',
-        date: 'July 2019',
-        tags: ['featured', 'photomanipulation'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/photomanip-thumb.jpg',
-        content: `
-        <p>Cyberpunk Style</p>
-        <img src="https://grantimbo.com/wp-content/uploads/2-4-768x960.jpg">
-        <p>Green Hornet Evo</p>
-        <img src="https://grantimbo.com/wp-content/uploads/sunrise-768x960.jpg">
-        <p>Shiny Evo</p>
-        <img src="https://grantimbo.com/wp-content/uploads/Obscure-768x960.jpg">
-        <h1>Breakdowns</h1>
-        <iframe width="626" height="330" src="https://www.youtube.com/embed/rVDLTEexbfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="626" height="330" src="https://www.youtube.com/embed/9AwXxvUaCaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="626" height="330" src="https://www.youtube.com/embed/pVmUFEQlkwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        `
-    },
-    {
-        title: 'Motion Design Compilation',
-        slug: 'motion-compilation',
-        date: 'July 2014',
-        tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/grantimbo-motion-thumb.jpg',
-        content: `keep calm`
-    },
-    {
-        title: 'Dumzville',
-        slug: 'dumzville',
-        date: 'July 2015',
-        tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/4-1-300x188.jpg',
-        content: `
-        <img src="https://grantimbo.com/wp-content/uploads/2-3.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/3-3.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/4-1.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/0-1.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/1-5.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/5-1.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/6.jpg">
-        `
-    },
-    
-    {
-        title: 'Product Visualizations',
-        slug: 'product-visualizations',
-        date: 'July 2019',
-        tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/photo_1240433985969247-300x188.jpg',
-        content: `wide evo`
-    },
-    {
-        title: 'LiquiPal Product Visualization',
-        slug: 'liquipal',
-        date: 'July 2014',
-        tags: ['product render'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/liquipal-grantimbo-thumb.jpg',
-        content: `
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_header.png">
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_preview_01.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_preview.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/keep_calm_preview_02.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-6.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-5.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-3.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-4.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-7.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-8.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/gears/gears-9.jpg">
         `
     },
     {
@@ -142,27 +189,66 @@ export const projects = [
         slug: 'chada-valencia',
         date: 'July 2014',
         tags: ['typography'],
-        thumbnail: 'https://grantimbo.com/wp-content/uploads/testtt0003-300x188.jpg',
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/chadavalencia/chadavalencia-thumb.jpg',
         content: `
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-01-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-02-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-03-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-04-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-05-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-06-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-07-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-08-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-09-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-10-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-11-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-12-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-13-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-14-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-15-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/grantimbo-chada-valencia-16-1080x1080.jpg">
-        <img src="https://grantimbo.com/wp-content/uploads/testtt0003-1526x1080.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-01.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-02.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-03.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-04.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-05.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-06.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-07.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-08.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-09.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-10.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-11.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-12.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-13.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-14.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-15.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-16.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/chadavalencia/grantimbo-chada-valencia-17.jpg">
         `
     },
+    {
+        title: 'Dumzville',
+        slug: 'dumzville',
+        date: 'March 2017',
+        tags: ['typography'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2017/dumzville/dumzville-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-1.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-2.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-3.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-4.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-5.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-6.jpg">
+        <img src="https://assets.grantimbo.com/projects/2017/dumzville/dumzville-7.jpg ">
+        `
+    },
+    
+    {
+        title: 'Product Renders',
+        slug: 'product-renders',
+        date: 'July 2017',
+        tags: ['typography'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2017/productrenders/productrenders-thumb.jpg',
+        content: `wide evo`
+    },
+    {
+        title: 'LiquiPal Product Visualization',
+        slug: 'liquipal',
+        date: 'July 2014',
+        tags: ['product render'],
+        thumbnail: 'https://assets.grantimbo.com/projects/2019/liquipal-grantimbo-thumb.jpg',
+        content: `
+        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_header.png">
+        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_preview_01.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_preview.jpg">
+        <img src="https://assets.grantimbo.com/projects/2019/keep_calm_preview_02.jpg">
+        `
+    },
+    
     {
         title: 'Abstract Renders',
         slug: 'abstract-renders',
@@ -254,7 +340,7 @@ export const projects = [
         slug: 'keep-calm',
         date: 'October 2013',
         tags: ['typography'],
-        thumbnail: 'https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-thumb.png',
+        thumbnail: 'https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-thumb.jpg',
         content: `
         <img src="https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-1.jpg">
         <img src="https://assets.grantimbo.com/projects/2013/keepcalm/keepcalm-2.jpg">

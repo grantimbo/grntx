@@ -8,4 +8,5 @@ import NavLink from './Navlink.svelte';
     <NavLink to="project-type/typography"><i class="icon-coffee"></i> <span>Typograhpy</span></NavLink>
     <NavLink to="project-type/motion"><i class="icon-motion"></i> <span>Motion</span></NavLink>
     <NavLink to="project-type/websites"><i class="icon-webdev"></i> <span>Websites</span></NavLink>
+    <NavLink to="project-type/cars"><i class="icon-webdev"></i> <span>Cars</span></NavLink>
 </nav>
