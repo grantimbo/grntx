@@ -22,6 +22,10 @@
         return p.tags.find(c => c == cat)
     })
 
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
 
     
 
@@ -30,7 +34,7 @@
 <CategoryNavBar/>
 
 <section class="project-wrap">
-    <h1>{cat}</h1>
+    <h1>{capitalizeFirstLetter(cat)}</h1>
 
     <section class="projects-list">
 
