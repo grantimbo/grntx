@@ -1,5 +1,6 @@
 <script>
-import NavBar from '../components/NavBar.svelte';
+	import NavBar from '../components/NavBar.svelte';
+	import Navbar from '../components/NavBar.svelte';
 </script>
 
 <section class="wrap">
@@ -38,8 +39,4 @@ import NavBar from '../components/NavBar.svelte';
 <NavBar />
 
 <style>
-article {
-	max-width: 500px;
-	margin: 40px auto 0;
-}
 </style>

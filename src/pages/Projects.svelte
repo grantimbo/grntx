@@ -1,5 +1,6 @@
 <script>
     import Modal from '../components/Modal.svelte';
+    import Navbar from '../components/NavBar.svelte';
     import CategoryNavBar from '../components/CategoryNavBar.svelte';
     import { projects } from "../_projects";
     import { navigate, Link } from "svelte-routing";
@@ -82,3 +83,11 @@
 
     {/if}
 </section>
+
+<Navbar/>
+
+<style>
+    section {
+        background: #F2F2F2;
+    }
+</style>

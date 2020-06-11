@@ -1,3 +1,7 @@
+<script>
+	import Navbar from '../components/NavBar.svelte';
+</script>
+
 <section class="wrap">
 	<article>
 		<h1>Services</h1>
@@ -49,10 +53,8 @@
 	</article>
 </section>
 
+<Navbar/>
 
 <style>
-article {
-	max-width: 500px;
-	margin: 40px auto 0;
-}
+
 </style>

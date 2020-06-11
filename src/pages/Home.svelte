@@ -1,17 +1,27 @@
 <script>
     import { Link } from "svelte-routing";
+    import Navbar from '../components/NavBar.svelte';
 </script>
 
+<header>
+    <img src="./imgs/logo.png" alt="Grant Imbo">
+</header>
 <section>
-    <article class="home">
-        <h1>Hello. I'm Grant</h1>
-        <p>I'm a multimedia artist creating cool stuff across the web and a developer focusing mainly on front-end.</p>
-        <Link to="/projects">All Projects</Link>
-        <Link to="/project-type/featured">Featured</Link>
+    <article>
+        <h1>Artist. Developer. Animator</h1>
+        <p>Hello I'm Grant, a multimedia designer creating cool stuff across the web and a developer focusing mainly on front-end.</p>
     </article>
 </section>
 
+<Navbar/>
+
 <style>
+    header {
+        padding: 1rem;
+    }
+    header img {
+        max-width: 50px;
+    }
     section {
         height: 100vh;
         display: flex;
@@ -21,6 +31,11 @@
         max-width: 500px;
         text-align: center;
         margin: 0 auto;
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+        font-weight: bold;
     }
     p {
         margin-bottom: 1rem;
