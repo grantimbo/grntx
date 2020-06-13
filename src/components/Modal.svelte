@@ -1,28 +1,76 @@
 <script>
   import { navigate } from "svelte-routing";
+  import { onMount } from 'svelte';
 
   let modal;
 
+  onMount(() => {
+	  document.querySelector('body').classList.add('hideOverflow');
+  })
+
   function closeModal() {
+	  document.querySelector('body').classList.remove('hideOverflow');
 	window.history.back();
   }
 </script>
 
 
-<div class="modal-background" on:click={() => closeModal()}></div>
-
 <div class="modal" role="dialog" aria-modal="true" bind:this={modal}>
-	<slot name="header"></slot>
-	<hr>
-	<slot></slot>
-	<hr>
-
-	<!-- svelte-ignore a11y-autofocus -->
-	<button autofocus on:click={() => closeModal()}>close modal</button>
+	<div class="back"><i class="material-icons" on:click={() => closeModal()}>keyboard_backspace</i> Projects</div>
+	<div class="content">
+		<slot name="header"></slot>
+		<slot name="content"></slot>
+	</div>
 </div>
+
+<div class="modal-background" on:click={() => closeModal()}></div>
 
 <style>
 	.modal-background {
+		display: none;
+	}
+	.modal {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: auto;
+		background: #fff;
+		color: #000;
+		z-index: 2;
+		padding-bottom: 60px;
+	}
+	.back {
+		background: black;
+		color: white;
+		padding: 1rem;
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+	}
+	.back i {
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	.content {
+		padding: 1rem;
+	}
+
+
+	@media (min-width: 992px) {
+		.modal-background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.397);
+			z-index: 3;
+		}
+	}
+
+	/* .modal-background {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -47,7 +95,9 @@
 		z-index: 4;
 	}
 
-	button {
-		display: block;
-	}
+	i {
+		position: absolute;
+		top: .5rem;
+		right: .5rem;
+	} */
 </style>

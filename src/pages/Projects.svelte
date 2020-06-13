@@ -22,31 +22,13 @@
         }
     }
     
-
-    // replace url
-    function replaceUrl(content) {
-        let replace = 'src="/'
-        let replaceWith = 'src="' + apiHost;
-        let reg = new RegExp(replace, "g");
-        let newContent = content.replace(reg, replaceWith)
-        return newContent;
-    }
-    // let tae;
-    // $: tae = currentTab;
-
-    function changeTab(e) {
-        currentTab = e;
-    }
-
-    
-
 </script>
 
 <CategoryNavBar/>
 
 <section class="project-wrap">
-    <h1>Projects</h1>
-    <p>Featured projects I’ve worked with.</p>
+    <h1>Featured Projects</h1>
+    <p>Selected artworks i've worked with.</p>
 
     <section class="projects-list">
 
@@ -76,9 +58,11 @@
     {#if post}
 
         <Modal on:close="{() => showModal = false}">
-            <h2 slot="header">{post.title}</h2>
-            <p>{post.date}</p>
-            <div class="content">{@html replaceUrl(post.content)}</div>
+            <div slot="header">
+                <h3>{post.title}</h3>
+                <p class="date">{post.date}</p>
+            </div>
+            <div slot="content">{@html post.content}</div>
         </Modal>
 
     {/if}
@@ -87,7 +71,14 @@
 <Navbar/>
 
 <style>
-    section {
+    .project-wrap {
         background: #F2F2F2;
+        padding-bottom: 80px;
+    }
+    h3 {
+        margin: 0;
+    }
+    p.date {
+        font-size: .8rem;
     }
 </style>

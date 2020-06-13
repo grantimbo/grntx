@@ -3,58 +3,75 @@
 </script>
 
 <section class="wrap">
-	<article>
-		<h1>Services</h1>
-		<p>A few lists of services I provide.</p>
-		<ul>
-			<li>Brand Identity (Logo, Poster, Banner, Ebooks.)</li>
-			<li>Website - Design to Development.</li>
-			<li>Simple Mobile Apps</li>
-			<li>3D Graphics </li>
-			<li>Product Visualizations (for Amazon Listings)</li>
-			<li>Motion Design (2D and 3D)</li>
-			<li>Email Marketing (Clickfunnels)</li>
-			
-		</ul>
+	<h2>Services</h2>
+	<p>Services I provide</p>
+
+	<section class="service">
+		<article>
+			<figure></figure>
+			<h3>Brand Itentity</h3>
+			<p>Logo, poster, banners, ebook or any graphic design needs</p>
+			<button>View Samples</button>
+			<button>Tools Used</button>
+		</article>
+
+		<article>
+			<figure></figure>
+			<h3>Website & Apps</h3>
+			<p>API driven website and apps. We'll use the latest web technologies and frameworks.</p>
+			<button>View Samples</button>
+			<button>Tools Used</button>
+		</article>
+
+		<article>
+			<figure></figure>
+			<h3>Product Renders</h3>
+			<p>Visualize your products in 3D.</p>
+			<button>View Samples</button>
+			<button>Tools Used</button>
+		</article>
+
+		<article>
+			<figure></figure>
+			<h3>Logo Animation</h3>
+			<p>Logo intro reveal animation</p>
+			<button>View Samples</button>
+			<button>Tools Used</button>
+		</article>
+
+		<article>
+			<figure></figure>
+			<h3>Email Marketing</h3>
+			<p>Generate leads</p>
+			<button>View Samples</button>
+			<button>Tools Used</button>
+		</article>
 		
-		<h2>Tools</h2>
-		
-		<h5>Design Tools</h5>
-		<p>Most used programs in my workflow</p>
-		<ul>
-			<li>Adobe Creative Suite (PS, XD, AE, ID, IL, PR) - For any graphic needs.</li>
-			<li>Cinema 4D (with Octane Render) - My primary 3D program.</li>
-			<li>And other applications related softwares and plugins.</li>
-		</ul>
-		
-		<h5>Development Tools</h5>
-		<b>Frontend</b>
-		<ul>
-			<li>HTML and CSS</li>
-			<li>Javascript</li>
-			<li>Bootstrap / Tailwind</li>
-			<li>vue.js</li>
-			<li>svelte.js</li>
-			<li>Flutter (for mobile apps)</li>
-		</ul>
-		
-		<b>Backend</b>
-		<ul>
-			<li>WordPress (with ACF)</li>
-			<li>Cloud Firestore</li>
-			<li>Strapi</li>
-		</ul>
-		
-		<b>Others</b>
-		<ul>
-			<li>Git and Github</li>
-			<li>VS Code</li>
-		</ul>
-	</article>
+
+	</section>
 </section>
 
 <Navbar/>
 
 <style>
-
+	.wrap {
+		background: #F2F2F2;
+		padding-bottom: 70px;
+		text-align: center;
+	}
+	.wrap > h2 {
+		margin: 0;
+	}
+	.service article {
+		background: white;
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
+	.service figure {
+		background: #efefef;
+		height: 150px;
+		width: 100%;
+		margin: 0 0 1rem 0;
+		padding: 0;
+	}
 </style>
