@@ -1,11 +1,11 @@
 <script>
 	import NavBar from '../components/NavBar.svelte';
-	import Navbar from '../components/NavBar.svelte';
 </script>
 
 <section class="wrap">
 	<article>
-		<h1>About</h1>
+		<h2>About</h2>
+		<p>Hi I'm Grant Imbo, a multimedia designer and a front-end Developer. I</p>
 		<p>A brief history where I’ve worked</p>
 		
 		<h5>2011 -2012 - Freelance</h5>

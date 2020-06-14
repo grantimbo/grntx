@@ -3,7 +3,7 @@
 </script>
 
 <section class="wrap">
-	<h2>Services</h2>
+	<h1>Services</h1>
 	<p>Services I provide</p>
 
 	<section class="service">
@@ -59,7 +59,7 @@
 		padding-bottom: 70px;
 		text-align: center;
 	}
-	.wrap > h2 {
+	.wrap > h1 {
 		margin: 0;
 	}
 	.service article {

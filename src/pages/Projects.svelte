@@ -5,7 +5,6 @@
     import { projects } from "../_projects";
     import { navigate, Link } from "svelte-routing";
 
-    export let apiHost;
     export let slug;
 
     let currentTab = 'featured';

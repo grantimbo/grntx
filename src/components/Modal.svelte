@@ -1,15 +1,9 @@
 <script>
   import { navigate } from "svelte-routing";
-  import { onMount } from 'svelte';
 
   let modal;
 
-  onMount(() => {
-	  document.querySelector('body').classList.add('hideOverflow');
-  })
-
   function closeModal() {
-	  document.querySelector('body').classList.remove('hideOverflow');
 	window.history.back();
   }
 </script>
