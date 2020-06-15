@@ -4,7 +4,7 @@
 
 <section class="wrap">
 	<article>
-		<h2>About</h2>
+		<h1>About</h1>
 		<p>Hi I'm Grant Imbo, a multimedia designer and a front-end Developer. I</p>
 		<p>A brief history where I’ve worked</p>
 		

@@ -110,6 +110,8 @@ nav.project-cat {
 	left: 0;
 	height: 100vh;
 	border-right: 1px solid #DEDEDE;
+	width: 46px;
+    overflow: hidden;
 }
 nav.project-cat a {
 	color: black;
@@ -139,9 +141,8 @@ nav.project-cat span {
 .project-wrap {
 	padding: 10px 10px 0 60px;
 }
-.project-wrap h1 {
-	margin: 0;
-	font-size: 1.4rem;
+.project-wrap > p {
+	margin-top: 0;
 }
 .projects-list {
 	display: grid;
@@ -157,9 +158,14 @@ nav.project-cat span {
 .projects-list .thumbnail {
 	position: relative;
 	overflow: hidden;
-	border: 1px solid #212528;
-	background: #161a1f;
+	border: 1px solid #dedede;
+	background: #fff;
 	height: 90px;
+}
+.projects-list .thumbnail div {
+	position: absolute;
+	width: 100%;
+	height: 100% !important;
 }
 .projects-list img {
 	width: 100%;
@@ -213,7 +219,9 @@ nav.project-cat span {
 }
 
 @media (min-width: 992px) {
-
+	nav.project-cat {
+		width: auto;
+	}
 	nav.project-cat i {
 		margin-right: .5rem;
 	}

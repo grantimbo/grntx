@@ -1,6 +1,7 @@
 <script>
     import Modal from '../components/Modal.svelte';
     import CategoryNavBar from '../components/CategoryNavBar.svelte';
+    import Navbar from '../components/NavBar.svelte';
     import { projects } from "../_projects";
     import { navigate, Link } from "svelte-routing";
 
@@ -15,8 +16,6 @@
         post = projects.find(p => p.cat == cat);
 
     }
-
-    console.log(cat)
 
     $: postList = projects.filter(p => {
         return p.tags.find(c => c == cat)
@@ -71,3 +70,13 @@
 
     {/if}
 </section>
+
+<Navbar/>
+
+<style>
+    .project-wrap {
+        background: #F2F2F2;
+        padding-bottom: 80px;
+        min-height: 100vh;
+    }
+</style>

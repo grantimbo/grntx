@@ -4,6 +4,7 @@
     import CategoryNavBar from '../components/CategoryNavBar.svelte';
     import { projects } from "../_projects";
     import { navigate, Link } from "svelte-routing";
+    import Lazy from 'svelte-lazy';
 
     export let slug;
 
@@ -19,6 +20,10 @@
         if (!post) {
             window.location.href = window.location.origin + "/404";
         }
+    }
+
+    const onload = (node) => {
+        console.log(node);
     }
     
 </script>
@@ -36,7 +41,9 @@
         <Link to="/projects/{project.slug}">
             <figure>
                 <div class="thumbnail">
-                    <img src={project.thumbnail} alt={project.title}>
+                    <Lazy offset={150} fadeOption={null}>
+                        <img src={project.thumbnail} alt={project.title}>
+                    </Lazy>
                 </div>
                 <div class="details">
                     <h3>{project.title}</h3>
@@ -73,6 +80,9 @@
     .project-wrap {
         background: #F2F2F2;
         padding-bottom: 80px;
+    }
+    .project-wrap h1 {
+        margin-bottom: 0;
     }
     h3 {
         margin: 0;
