@@ -67,9 +67,6 @@ iframe {
 	outline: 0;
 }
 
-
-
-
 /* main navigation */
 nav.main {
 	position: fixed;
@@ -137,6 +134,7 @@ nav.project-cat span {
 	display: none;
 }
 
+
 /* project list */
 .project-wrap {
 	padding: 10px 10px 0 60px;
@@ -187,10 +185,11 @@ nav.project-cat span {
 }
 
 
-
-
 /* modal contents */
-
+.modal img {
+	background: #efefef;
+	border: 1px solid #ccc;
+}
 
 /*------------------------------------*\
 	MEDIA QUERIES
