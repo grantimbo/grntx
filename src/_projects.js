@@ -76,7 +76,7 @@ export const projects = [
         content: `
         <img src="https://assets.grantimbo.com/projects/2019/greenevo/greenevo-1.png" width="956" height="956">
         <img src="https://assets.grantimbo.com/projects/2019/greenevo/greenevo-2.jpg" width="1280" height="1280">
-        <iframe width="910" height="510" src="https://www.youtube.com/embed/S7XCEfg7tnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="iframe-wrap"><iframe width="910" height="510" src="https://www.youtube.com/embed/S7XCEfg7tnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         `
     },
     {
@@ -181,12 +181,12 @@ export const projects = [
         Sound Design done in Sony Vegas.</br>
         Compositing in After Effects.</br>
         </p>
-        <iframe title="GEARS - Title Opener" src="https://player.vimeo.com/video/345348719" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+        <div class="iframe-wrap"><iframe title="GEARS - Title Opener" src="https://player.vimeo.com/video/345348719" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
         <h3>Animatic</h3>
-        <iframe title="GEARS - Animatic" src="https://player.vimeo.com/video/345348200" width="426" height="240" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+        <div class="iframe-wrap"><iframe title="GEARS - Animatic" src="https://player.vimeo.com/video/345348200" width="426" height="240" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
         <p>Modelling, texturing, lighting and animation done in Cinema 4D</p>
         <h3>Sound Design</h3>
-        <iframe title="GEARS - Sound Design" src="https://player.vimeo.com/video/345348115" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+        <div class="iframe-wrap"><iframe title="GEARS - Sound Design" src="https://player.vimeo.com/video/345348115" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
         <p>Sound Design done in Sony Vegas Pro</p>
         <h3>Stills</h3>
         <img src="https://assets.grantimbo.com/projects/2019/gears/gears-1.jpg" width="960" height="540">
@@ -206,7 +206,7 @@ export const projects = [
         date: 'Sept 2017',
         tags: ['motion'],
         thumbnail: 'https://assets.grantimbo.com/projects/2017/eglaf/eglaf-thumb.jpg',
-        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/A8b13SymeCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        content: `<div class="iframe-wrap"><iframe width="910" height="510" src="https://www.youtube.com/embed/A8b13SymeCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
         title: 'Chada Valencia',
@@ -420,7 +420,7 @@ export const projects = [
         date: 'September 2014',
         tags: ['motion'],
         thumbnail: 'https://assets.grantimbo.com/projects/2014/feelthatsweetness/feelthatsweetness-thumb.jpg',
-        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/uXwCt_LfeLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        content: `<div class="iframe-wrap"><iframe width="910" height="510" src="https://www.youtube.com/embed/uXwCt_LfeLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
         title: 'Type G',
@@ -507,7 +507,7 @@ export const projects = [
         date: 'November 2012',
         tags: ['motion'],
         thumbnail: 'https://assets.grantimbo.com/projects/2012/theepic/theepic-thumb.jpg',
-        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/dedLQtYjjvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        content: `<div class="iframe-wrap"><iframe width="910" height="510" src="https://www.youtube.com/embed/dedLQtYjjvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
         title: 'Under',
@@ -515,7 +515,7 @@ export const projects = [
         date: 'November 2012',
         tags: ['motion'],
         thumbnail: 'https://assets.grantimbo.com/projects/2012/under/under-thumb.jpg',
-        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/OaUAG2J2hDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        content: `<div class="iframe-wrap"><iframe width="910" height="510" src="https://www.youtube.com/embed/OaUAG2J2hDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
         title: 'Lost in War',
@@ -523,7 +523,7 @@ export const projects = [
         date: 'November 2012',
         tags: ['motion'],
         thumbnail: 'https://assets.grantimbo.com/projects/2012/lostinwar/lostinwar-thumb.jpg',
-        content: `<iframe width="910" height="510" src="https://www.youtube.com/embed/M1LkLZ7fjeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        content: `<div class="iframe-wrap"><iframe width="910" height="510" src="https://www.youtube.com/embed/M1LkLZ7fjeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
 
 ]
