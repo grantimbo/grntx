@@ -10,7 +10,7 @@
 
 
 <div class="modal" role="dialog" aria-modal="true" bind:this={modal}>
-	<div class="back"><i class="material-icons" on:click={() => closeModal()}>keyboard_backspace</i> Projects</div>
+	<div class="back"><i class="icon-back-arrow" on:click={() => closeModal()}></i> Projects</div>
 	<div class="content">
 		<slot name="header"></slot>
 		<slot name="content"></slot>
