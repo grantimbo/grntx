@@ -22,7 +22,7 @@
     })
 
     function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
+        return string.replace(/-/g, " ");
     }
 
 
@@ -74,6 +74,9 @@
 <Navbar/>
 
 <style>
+    h1 {
+        text-transform: capitalize;
+    }
     .project-wrap {
         background: #F2F2F2;
         padding-bottom: 80px;
