@@ -3,7 +3,7 @@
     import Navbar from '../components/NavBar.svelte';
     import CategoryNavBar from '../components/CategoryNavBar.svelte';
     import { projects } from "../_projects";
-    import { navigate, Link } from "svelte-routing";
+    import { Link } from "svelte-routing";
     import Lazy from 'svelte-lazy';
 
     export let slug;
@@ -22,9 +22,6 @@
         }
     }
 
-    const onload = (node) => {
-        console.log(node);
-    }
     
 </script>
 
@@ -32,7 +29,7 @@
 
 <section class="project-wrap">
     <h1>Featured Projects</h1>
-    <p>Selected artworks i've worked with.</p>
+    <p>A few selected projects</p>
 
     <section class="projects-list">
 

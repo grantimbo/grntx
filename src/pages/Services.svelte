@@ -4,13 +4,13 @@
 
 <section class="wrap">
 	<h1>Services</h1>
-	<p>Services I provide</p>
+	<p>Services I offer</p>
 
 	<section class="service">
 		<article>
 			<figure></figure>
-			<h3>Brand Itentity</h3>
-			<p>Logo, poster, banners, ebook or any graphic design needs</p>
+			<h3>Graphic Design</h3>
+			<p>Logo, poster, banners, ebook or any graphic needs</p>
 			<button>View Samples</button>
 			<button>Tools Used</button>
 		</article>
