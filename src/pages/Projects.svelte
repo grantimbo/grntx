@@ -25,8 +25,14 @@
     
 </script>
 
-<CategoryNavBar/>
 
+<header>
+    <Link to="/">
+        <img class="logo" src="./imgs/logo.svg" alt="Grant Imbo">
+    </Link>
+    <Navbar/>
+</header>
+<CategoryNavBar/>
 <section class="project-wrap">
     <h1>Featured Projects</h1>
     <p>A few selected projects</p>
@@ -71,20 +77,34 @@
     {/if}
 </section>
 
-<Navbar/>
 
 <style>
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
     .project-wrap {
-        background: #F2F2F2;
-        padding-bottom: 80px;
+        padding: 80px 10px 80px 60px;
     }
     .project-wrap h1 {
         margin-bottom: 0;
+    }
+    .project-wrap p {
+        margin-bottom: 1.2rem;
     }
     h3 {
         margin: 0;
     }
     p.date {
         font-size: .8rem;
+    }
+
+    @media (min-width: 992px) {
+        .project-wrap {
+            padding-left: 204px;
+            padding-right: 20px;
+        }
     }
 </style>

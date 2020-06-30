@@ -14,7 +14,6 @@
     if (cat) {
         showModal = true;
         post = projects.find(p => p.cat == cat);
-
     }
 
     $: postList = projects.filter(p => {
@@ -25,13 +24,15 @@
         return string.replace(/-/g, " ");
     }
 
-
-    
-
 </script>
 
+<header>
+    <Link to="/">
+        <img class="logo" src="../imgs/logo.svg" alt="Grant Imbo">
+    </Link>
+    <Navbar/>
+</header>
 <CategoryNavBar/>
-
 <section class="project-wrap">
     <h1>{capitalizeFirstLetter(cat)}</h1>
 
@@ -71,15 +72,30 @@
     {/if}
 </section>
 
-<Navbar/>
-
 <style>
-    h1 {
-        text-transform: capitalize;
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
     }
     .project-wrap {
-        background: #F2F2F2;
-        padding-bottom: 80px;
-        min-height: 100vh;
+        padding: 80px 10px 80px 60px;
+    }
+    .project-wrap h1 {
+        text-transform: capitalize;
+    }
+    .project-wrap p {
+        margin-bottom: 1.2rem;
+    }
+    h3 {
+        margin: 0;
+    }
+
+    @media (min-width: 992px) {
+        .project-wrap {
+            padding-left: 204px;
+            padding-right: 20px;
+        }
     }
 </style>

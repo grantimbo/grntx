@@ -10,14 +10,12 @@
 
 </script>
 
-<main>
-	<Router>
-		<Route path="/"><Home/></Route>
-		<Route path="projects"><Projects/></Route>
-		<Route path="project-type/:cat" let:params><Category cat="{params.cat}"/></Route>
-		<Route path="projects/:slug" let:params><Projects slug="{params.slug}"/></Route>
-		<Route path="services"><Services/></Route>
-		<Route path="about"><About/></Route>
-		<Route><NotFound/></Route>
-	</Router>
-</main>
+<Router>
+	<Route path="/"><Home/></Route>
+	<Route path="projects"><Projects/></Route>
+	<Route path="project-type/:cat" let:params><Category cat="{params.cat}"/></Route>
+	<Route path="projects/:slug" let:params><Projects slug="{params.slug}"/></Route>
+	<Route path="services"><Services/></Route>
+	<Route path="about"><About/></Route>
+	<Route><NotFound/></Route>
+</Router>

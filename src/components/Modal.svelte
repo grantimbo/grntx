@@ -30,13 +30,13 @@
 		left: 0;
 		right: 0;
 		overflow: auto;
-		background: #fff;
-		color: #000;
+		background: #090e20;
 		z-index: 2;
 		padding-bottom: 60px;
 	}
 	.back {
-		background: black;
+		background: #11172e;
+		border-bottom: 1px solid #1d294a;
 		color: white;
 		padding: 1rem;
 		font-size: 1.2rem;
@@ -63,35 +63,4 @@
 			z-index: 3;
 		}
 	}
-
-	/* .modal-background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.3);
-		z-index: 3;
-	}
-
-	.modal {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		width: calc(100vw - 4em);
-		max-width: 1400px;
-		max-height: calc(100vh - 4em);
-		overflow: auto;
-		transform: translate(-50%,-50%);
-		padding: 1em;
-		background: #fff;
-		color: #000;
-		z-index: 4;
-	}
-
-	i {
-		position: absolute;
-		top: .5rem;
-		right: .5rem;
-	} */
 </style>

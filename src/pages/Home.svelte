@@ -4,7 +4,9 @@
 </script>
 
 <header>
-    <img class="logo" src="./imgs/logo.png" alt="Grant Imbo">
+    <Link to="/">
+        <img class="logo" src="./imgs/logo.svg" alt="Grant Imbo">
+    </Link>
     <Navbar/>
 </header>
 <section class="contents">
@@ -22,15 +24,10 @@
 
 
 <style>
-    .logo {
-        display: none;
-        max-width: 40px;
-        margin: 0 auto;
-    }
+    
     figure {
         padding: 0;
         margin: 0;
-        height: 60vh;
         display: flex;
         align-items: center;
     }
@@ -51,16 +48,10 @@
     }
 
     @media (min-width: 768px) {
-        header {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-        }
-        .logo {
-            display: inline-block;
-        }
+        
         .contents {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1.6fr 1fr;
             max-width: 1600px;
             margin: 0 auto;
         }

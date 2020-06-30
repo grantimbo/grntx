@@ -20,7 +20,10 @@ body {
 *, *, *:after {
 	box-sizing: inherit;
 }
-
+figure {
+    margin: 0;
+    position: relative;
+}
 h1, h2, h3, h4, h5, h6, p, ol, ul {
 	margin: 0 0 .8rem 0;
 	padding: 0;
@@ -54,17 +57,20 @@ a {
 }
 
 
-.wrap {
-	padding: 1.3rem;
-}
-.btn, button, .home a {
-	background: #000;
+.btn, button {
+    background: #11172e;
+    border: 1px solid #1d294a;
     color: #fff;
-	padding: .5rem 1.5rem;
-	display: inline-block;
+    font-size: 1rem;
+	padding: .8rem 1.5rem;
+    display: inline-block;
+    font-family: inherit;
 	text-decoration: none;
-	border: 0;
-	outline: 0;
+    outline: 0;
+    cursor: pointer;
+    &:hover {
+        background: rgba(16, 14, 70, 0.267);
+    }
 }
 
 /* 16:9 iframe */
@@ -76,8 +82,8 @@ iframe {
 	overflow: hidden;
 	width: 100%;
 	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-	background: #efefef;
-    border: 1px solid #ccc;
+    border: 1px solid #1d294a;
+    background: #16203c;
     
     /* Then style the iframe to fit in the container div with full height and width */
     iframe {
@@ -91,15 +97,27 @@ iframe {
     }
 }
 
+header {
+    background: #11172e;
+    border-bottom: 1px solid #1d294a;
+
+    > a {
+        display: flex;
+        align-items: center;
+        padding: 0 .5rem;
+    }
+
+    .logo {
+        display: none;
+        max-width: 40px;
+        margin: 0 auto;
+    }
+}
 
 /* main navigation */
 nav.main {
     position: relative;
-    z-index: 2;
 	align-items: center;
-	background: #11172e;
-    border-bottom: 1px solid #171f36;
-	width: 100vw;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
     text-align: center;
@@ -109,17 +127,17 @@ nav.main {
     }
 
     a {
-        color: white;
+        color:#3366be;
         padding: .6rem;
         text-decoration: none;
 
-        &.active {
+        &.active,
+        &:hover{
             background: #16203c;
+            color: #ffffff;
         }
 
-        &:hover {
-            background: #16203c;
-        }
+       
     }
 
     span {
@@ -132,16 +150,16 @@ nav.main {
 /* project nav/ */
 nav.project-cat {
 	position: fixed;
-	background: white;
-	top: 0;
+    border-right: 1px solid #1d294a;
+    background: #16203c;
+	top: 60px;
 	left: 0;
 	height: 100vh;
-	border-right: 1px solid #dedede;
 	width: 46px;
     overflow: hidden;
 
     a {
-        color: black;
+        color: #3366be;
         padding: 1rem .8rem;
         margin-bottom: .5rem;
         text-decoration: none;
@@ -155,7 +173,7 @@ nav.project-cat {
         width: 100%;
 
         &.active {
-            background: #efefef;
+            color: #fff;
         }
     }
 
@@ -170,14 +188,6 @@ nav.project-cat {
 
 
 /* project list */
-.project-wrap {
-    padding: 10px 10px 0 60px;
-    
-    > p {
-        margin-top: 0;
-    }
-}
-
 .projects-list {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -193,8 +203,8 @@ nav.project-cat {
     .thumbnail {
         position: relative;
         overflow: hidden;
-        border: 1px solid #dedede;
-        background: #fff;
+        border: 1px solid #1d294a;
+        background: #16203c;
         height: 90px;
 
         div {
@@ -228,8 +238,8 @@ nav.project-cat {
 
 /* modal contents */
 .modal img {
-	background: #efefef;
-	border: 1px solid #ccc;
+    border: 1px solid #1d294a;
+    background: #16203c;
 }
 
 /*------------------------------------*\
@@ -253,13 +263,41 @@ nav.project-cat {
 	}
 }
 @media (min-width: 768px) {
-	.projects-list {
-		grid-template-columns: repeat(3, 1fr);
-	}
+	
+    header {
+        display: flex;
+        padding: .5rem 0;
+        justify-content: space-between;
+
+        .logo {
+            display: inline-block;
+        }
+    }
+    
 
 	/* nav */
 	nav.main {
-		
+        background: none;
+        border: 0;
+        a {
+            display: flex;
+            align-items: center;
+            padding: .6rem 1.6rem;
+            &.active,
+            &:hover {
+                background: none;
+            }
+            i { 
+                margin-right: .6rem;
+            }
+            span { 
+                font-size: 1.1rem;
+            }
+        }
+    }
+    
+    .projects-list {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
@@ -284,9 +322,7 @@ nav.project-cat {
 	}
 
 
-	.project-wrap {
-		padding-left: 192px;
-	}
+	
 	.projects-list {
 		grid-template-columns: repeat(4, 1fr);
 	}
