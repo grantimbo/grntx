@@ -83,18 +83,20 @@
 
 	@media (min-width: 620px) {
 		section.service {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 2rem;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
 		article {
-			margin: 0;
+			flex: 0 0 calc(50% - 20px);
+			padding: 20px;
+			margin: 10px;
 		}
 	}
 
 	@media (min-width: 992px) {
-		section.service {
-			grid-template-columns: 1fr 1fr 1fr;
+		article {
+			flex: 0 0 calc(33.333% - 20px);
 		}
 	}
 	
