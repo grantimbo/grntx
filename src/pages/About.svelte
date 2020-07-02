@@ -9,28 +9,34 @@
     </Link>
 	<NavBar/>
 </header>
-<section>
+<section class="head">
+	<img srcset="./imgs/about-head-sm.png 560w,
+				./imgs/about-head-lg.png 1066w"
+		sizes="(max-width: 768px) 150px, 1066px"
+		src="./imgs/about-head-lg.png"
+		width="1066"
+		height="574"
+		alt="About">
+</section>
+<section class="about">
 	<article>
-		<h1>About</h1>
-		<p>Here's a bit of where I’ve been.</p>
-
-		<p>Hi I'm Grant Imbo, a multimedia designer and front-end Developer.</p>
+		<h2>Here's a bit of where I’ve been.</h2>
 		
-		<h3>2011-2012 : Graphic Designer</h3>
+		<h3>2011-2012 : Graphic / Motion Designer</h3>
 		<ul>
 			<li>Creating graphic & motion designs</li>
 		</ul>
 		
 		<h3>2012-2014 : Graphic Designer, WordPress Developer and Front-end Developer</h3>
 		<ul>
-			<li>Designing graphic related stuff e.i logos, brochure, posters, banners, ebooks and any type of visual expressions.</li>
-			<li>Developing WordPress Themes - Converting PSD Mockups to HTML/CSS/JS to WordPress Themes.</li>
+			<li>Designing graphic related stuff e.i logos, brochure, posters, banners, ebooks or any type of visual expressions.</li>
+			<li>Developing WordPress Themes - Designing PSD Mockups, converting them to HTML/CSS/JS then to WordPress Themes.</li>
 			<li>Occationally did some Animations / Explainer Videos</li>
 		</ul>
 		
-		<h3>2014-2016 : Lead Graphic Artist, 3D Designer, Web Developer</h3>
+		<h3>2014-2016 : Lead Graphic Designer, 3D Artist, Web Developer</h3>
 		<ul>
-			<li>Rendering 3D Products for Amazon Listings</li>
+			<li>Rendering high quality 3D Products for Amazon Listings</li>
 			<li>Responsible for creating web and graphic related designs.</li>
 			<li>Occationally Develop Websites.</li>
 		</ul>
@@ -43,9 +49,9 @@
 		<p>I believe anything can be overcome through commitment and hard work. Always up for learning new things and never gets satisfied with an average output, always striving for something better and fresh.</p>
 		
 		<p>Have an idea you'd like to discuss? <br/>
-			Shoot a me a message at  <a href="#">grant.imbo@gmail.com</a></p>
+			Feel free to contact me at  <span>grant.imbo@gmail.com</span></p>
 		
-		<p>Or just want to be friends?  Find me online on most digital platforms <a href="#">@grantimbo</a> or <a href="#">@grntx</a> or by clicking the links below. </p>
+		<p>Or just want to be friends?  Find me online on most digital platforms <span>@grantimbo</span> or <span>@grntx</span> or by clicking the links below. </p>
 		<div class="social-icons">
 			<a href="//github.com/grantimbo" target="_blank" alt="Github" rel="noopener"><i class="icon-github"></i></a>
 			<a href="//codepen.io/grantimbo" target="_blank" alt="Codepen" rel="noopener"><i class="icon-codepen"></i></a>
@@ -59,31 +65,35 @@
 </section>
 
 <style>
-	section {
-		padding: 1rem;
-		max-width: 700px;
+	section.head {
+		text-align: center;
+	}
+	section.about {
+		max-width: 620px;
 		margin: 0 auto;
 	}
 	article {
-		border: 1px solid #1d294a;
-		background: #11172e;
-		padding: 2rem;
+		padding: 1rem;
 	}
-	h1 {
-		margin-bottom: 0;
+	h2 {
+		margin-bottom: 1.5rem;
+		color: var(--eggblue);
 	}
-	h1 + p {
-		margin-bottom: 2rem;
+	ul {
+		padding-left: 2.2rem;
+		margin-bottom: 1.2rem;
 	}
-	
+	span {
+		color: var(--eggblue);
+	}
+	.social-icons {
+		margin: 2rem 0;
+	}
 	.social-icons a {
 		font-size: 1.4rem;
 		margin-right: .8rem;
 		text-decoration: none;
+		color: var(--eggblue);
 	}
-	@media (min-width: 620px) { 
-		section {
-			padding-top: 3rem;
-		}
-	}
+	
 </style>

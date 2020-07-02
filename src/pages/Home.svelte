@@ -11,11 +11,17 @@
 </header>
 <section class="contents">
     <figure>
-        <img srcset="./imgs/home-bg-sm.jpg 600w, ./imgs/home-bg-lg.jpg 1280w" src="./imgs/home-bg-lg.jpg" width="1104" height="930" alt="Creator. Thinker">
+        <img srcset="./imgs/home-bg-sm.png 640w,
+                    ./imgs/home-bg-lg.png 1104w"
+            sizes="(max-width: 768px) 640px, 1104px"
+            src="./imgs/home-bg-lg.png"
+            width="1104"
+            height="930"
+            alt="Creator Thinker">
     </figure>
     <section>
         <article>
-            <h1>Hello I'm Grant.</h1>
+            <h2>Hello I'm Grant.</h2>
             <p>I'm a multimedia designer creating cool stuff across the web and a developer focusing mainly on <span style="white-space: nowrap;">front-end.</span></p>
         </article>
     </section>
@@ -40,9 +46,6 @@
         padding: 1.3rem;
         margin: 0 auto;
     }
-    h1 {
-        font-size: 1.3rem;
-    }
     p {
         margin-bottom: 1rem;
     }
@@ -65,12 +68,5 @@
         }
     }
 
-    @media (min-width: 1280px) {
-        h1 {
-            font-size: 1.6rem;
-        }
-        p {
-            font-size: 1.1rem;
-        }
-    }
+    
 </style>
