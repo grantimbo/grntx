@@ -1,3 +1,8 @@
+:root {
+    --eggblue: #00cdde;
+    --darkblue: #11172e;
+    --border: 1px solid #1d294a;
+}
 html {
 	box-sizing: border-box;
 }
@@ -42,7 +47,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-  
 a {
 	color: rgb(0,100,200);
     text-decoration: none;
@@ -56,13 +60,12 @@ a {
     }
 }
 
-
+section.service a,
 .btn, button {
-    background: #11172e;
-    border: 1px solid #1d294a;
+    background: var(--darkblue);
+    border: var(--border);
     color: #fff;
-    font-size: 1rem;
-	padding: .8rem 1.5rem;
+	padding: .6rem 1.6rem;
     display: inline-block;
     font-family: inherit;
 	text-decoration: none;
@@ -82,8 +85,8 @@ iframe {
 	overflow: hidden;
 	width: 100%;
 	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    border: 1px solid #1d294a;
-    background: #16203c;
+    border: var(--border);
+    background: var(--darkblue);
     
     /* Then style the iframe to fit in the container div with full height and width */
     iframe {
@@ -98,8 +101,8 @@ iframe {
 }
 
 header {
-    background: #11172e;
-    border-bottom: 1px solid #1d294a;
+    background: var(--darkblue);
+    border-bottom: var(--border);
 
     > a {
         display: flex;
@@ -133,7 +136,7 @@ nav.main {
 
         &.active,
         &:hover{
-            background: #16203c;
+            background: var(--darkblue);
             color: #ffffff;
         }
 
@@ -150,8 +153,8 @@ nav.main {
 /* project nav/ */
 nav.project-cat {
 	position: fixed;
-    border-right: 1px solid #1d294a;
-    background: #16203c;
+    border-right: var(--border);
+    background: var(--darkblue);
 	top: 60px;
 	left: 0;
 	height: 100vh;
@@ -203,8 +206,8 @@ nav.project-cat {
     .thumbnail {
         position: relative;
         overflow: hidden;
-        border: 1px solid #1d294a;
-        background: #16203c;
+        border: var(--border);
+        background: var(--darkblue);
         height: 90px;
 
         div {
@@ -238,8 +241,8 @@ nav.project-cat {
 
 /* modal contents */
 .modal img {
-    border: 1px solid #1d294a;
-    background: #16203c;
+    border: var(--border);
+    background: var(--darkblue);
 }
 
 /*------------------------------------*\
@@ -263,6 +266,16 @@ nav.project-cat {
 	}
 }
 @media (min-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    section.service a,
+    .btn, button {
+        padding: .8rem 1.8rem;
+        font-size: 1.2rem;
+    }
 	
     header {
         display: flex;
