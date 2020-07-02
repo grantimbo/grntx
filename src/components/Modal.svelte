@@ -3,26 +3,28 @@
 
   let modal;
 
-  function closeModal() {
-	window.history.back();
+  function closeModal(e) {
+	if ( e.target.dataset.modal != 'close') {
+		return;
+	} else {
+		window.history.back();
+	}
   }
 </script>
 
 
-<div class="modal" role="dialog" aria-modal="true" bind:this={modal}>
-	<div class="back"><i class="icon-back-arrow" on:click={() => closeModal()}></i> Projects</div>
-	<div class="content">
-		<slot name="header"></slot>
-		<slot name="content"></slot>
+<div class="modal" data-modal="close" role="dialog" aria-modal="true" bind:this={modal} on:click={(e) => closeModal(e)}>
+	<div class="modal-container">
+		<div class="back"><i class="icon-back-arrow" data-modal="close" on:click={(e) => closeModal(e)}></i> Projects</div>
+		<div class="content">
+			<slot name="header"></slot>
+			<slot name="content"></slot>
+		</div>
 	</div>
 </div>
 
-<div class="modal-background" on:click={() => closeModal()}></div>
 
 <style>
-	.modal-background {
-		display: none;
-	}
 	.modal {
 		position: fixed;
 		top: 0;
@@ -32,7 +34,10 @@
 		overflow: auto;
 		background: #090e20;
 		z-index: 2;
-		padding-bottom: 60px;
+	}
+	.modal-container {
+		background: #090e20;
+		min-height: 80vh;
 	}
 	.back {
 		background: #11172e;
@@ -52,15 +57,28 @@
 	}
 
 
+	@media (min-width: 768px) {
+		.back {
+			display: none;
+		}
+		.modal {
+			background: #141827bf;
+		}
+		.modal-container {
+			max-width: 720px;
+			background: #090e20;
+			border: var(--border);
+			margin: 3rem auto;
+		}
+	}
 	@media (min-width: 992px) {
-		.modal-background {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.397);
-			z-index: 3;
+		.modal-container {
+			max-width: 900px;
+		}
+	}
+	@media (min-width: 1200px) {
+		.modal-container {
+			max-width: 1000px;
 		}
 	}
 </style>
