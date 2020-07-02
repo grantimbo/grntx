@@ -28,7 +28,7 @@
 
 <header>
     <Link to="/">
-        <img class="logo" src="./imgs/logo.svg" alt="Grant Imbo">
+        <img class="logo" src="/imgs/logo.svg" alt="Grant Imbo">
     </Link>
     <Navbar/>
 </header>
