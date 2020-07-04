@@ -1,24 +1,6 @@
 <script>
-	import ModalService from '../components/ModalService.svelte';
 	import Navbar from '../components/NavBar.svelte';
-	import { services } from "../_services";
 	import { Link } from "svelte-routing";
-
-	export let slug;
-
-    let showModal = false;
-    let post;
-    
-    // if single post
-    if (slug) {
-        showModal = true;
-        post = services.find(p => p.slug == slug);
-
-        if (!post) {
-            window.location.href = window.location.origin + "/404";
-        }
-	}
-	
 </script>
 
 <header>
@@ -129,18 +111,6 @@
 	
 
 </section>
-
-{#if post}
-
-	<ModalService on:close="{() => showModal = false}">
-		<div slot="header">
-			<h3>{post.title}</h3>
-		</div>
-		<div slot="content">{@html post.content}</div>
-	</ModalService>
-
-{/if}
-
 
 <style>
 	section.head {

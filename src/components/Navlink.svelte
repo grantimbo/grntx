@@ -11,9 +11,8 @@
 
       // if page is /projects/* toggle 'hideOverflow' body class
       let projectLink = location.pathname.includes('/projects/');
-      let servicesLink = location.pathname.includes('/services/');
 
-      if (projectLink || servicesLink) {
+      if (projectLink) {
         document.querySelector('body').classList.add('hideOverflow');
       } else {
         document.querySelector('body').classList.remove('hideOverflow');
