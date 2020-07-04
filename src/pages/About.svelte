@@ -61,7 +61,7 @@
 			<a href="https://github.com/grantimbo" target="_blank" alt="Github" rel="noopener"><i class="icon-github"></i></a>
 			<a href="https://codepen.io/grantimbo" target="_blank" alt="Codepen" rel="noopener"><i class="icon-codepen"></i></a>
 			<a href="https://artstation.com/grantimbo" target="_blank" alt="Artstation" rel="noopener"><i class="icon-artstation"></i></a>
-			<a href="https://behance.com/grantimbo" target="_blank" alt="Behance" rel="noopener"><i class="icon-behance"></i></a>
+			<a href="https://behance.net/grantimbo" target="_blank" alt="Behance" rel="noopener"><i class="icon-behance"></i></a>
 		</div>
 	</article>
 </section>
