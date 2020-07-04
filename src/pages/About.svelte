@@ -5,15 +5,15 @@
 
 <header>
     <Link to="/">
-        <img class="logo" src="./imgs/logo.svg" alt="Grant Imbo">
+        <img class="logo" src="https://assets.grantimbo.com/imgs/logo.svg" alt="Grant Imbo">
     </Link>
 	<NavBar/>
 </header>
 <section class="head">
-	<img srcset="./imgs/about-head-sm.png 560w,
-				./imgs/about-head-lg.png 1066w"
+	<img srcset="https://assets.grantimbo.com/imgs/about-head-sm.png 560w,
+				https://assets.grantimbo.com/imgs/about-head-lg.png 1066w"
 		sizes="(max-width: 768px) 150px, 1066px"
-		src="./imgs/about-head-lg.png"
+		src="https://assets.grantimbo.com/imgs/about-head-lg.png"
 		width="1066"
 		height="574"
 		alt="About">

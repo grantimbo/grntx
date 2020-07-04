@@ -28,10 +28,10 @@
     <Navbar/>
 </header>
 <section class="head">
-	<img srcset="/imgs/services-head-sm.png 560w,
-				/imgs/services-head-lg.png 1066w"
+	<img srcset="https://assets.grantimbo.com/imgs/services-head-sm.png 560w,
+				https://assets.grantimbo.com/imgs/services-head-lg.png 1066w"
 		sizes="(max-width: 768px) 560px, 1066px"
-		src="/imgs/services-head-lg.png"
+		src="https://assets.grantimbo.com/imgs/services-head-lg.png"
 		width="1066"
 		height="574"
 		alt="Email Marketing">
@@ -39,10 +39,10 @@
 <section class="service">
 	<article>
 		<div class="flex img">
-			<img srcset="/imgs/services/graphic-design-sm.png 150w,
-						/imgs/services/graphic-design-lg.png 323w"
+			<img srcset="https://assets.grantimbo.com/imgs/services/graphic-design-sm.png 150w,
+						https://assets.grantimbo.com/imgs/services/graphic-design-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
-				src="/imgs/services/graphic-design-lg.png"
+				src="https://assets.grantimbo.com/imgs/services/graphic-design-lg.png"
 				width="323"
 				height="323"
 				alt="Graphic Design">
@@ -63,10 +63,10 @@
 			</div>
 		</div>
 		<div class="flex img">
-			<img srcset="/imgs/services/website-apps-sm.png 150w,
-						/imgs/services/website-apps-lg.png 323w"
+			<img srcset="https://assets.grantimbo.com/imgs/services/website-apps-sm.png 150w,
+						https://assets.grantimbo.com/imgs/services/website-apps-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
-				src="/imgs/services/website-apps-lg.png"
+				src="https://assets.grantimbo.com/imgs/services/website-apps-lg.png"
 				width="323"
 				height="323"
 				alt="Websites and Apps">
@@ -75,10 +75,10 @@
 
 	<article>
 		<div class="flex img">
-			<img srcset="/imgs/services/product-renders-sm.png 150w,
-						/imgs/services/product-renders-lg.png 323w"
+			<img srcset="https://assets.grantimbo.com/imgs/services/product-renders-sm.png 150w,
+						https://assets.grantimbo.com/imgs/services/product-renders-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
-				src="/imgs/services/product-renders-lg.png"
+				src="https://assets.grantimbo.com/imgs/services/product-renders-lg.png"
 				width="323"
 				height="323"
 				alt="Product Renders">
@@ -99,10 +99,10 @@
 			</div>
 		</div>
 		<div class="flex img">
-			<img srcset="/imgs/services/video-production-sm.png 150w,
-						/imgs/services/video-production-lg.png 323w"
+			<img srcset="https://assets.grantimbo.com/imgs/services/video-production-sm.png 150w,
+						https://assets.grantimbo.com/imgs/services/video-production-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
-				src="/imgs/services/video-production-lg.png"
+				src="https://assets.grantimbo.com/imgs/services/video-production-lg.png"
 				width="323"
 				height="323"
 				alt="Video Production">
@@ -111,10 +111,10 @@
 
 	<article>
 		<div class="flex img">
-			<img srcset="/imgs/services/email-marketing-sm.png 150w,
-						/imgs/services/email-marketing-lg.png 323w"
+			<img srcset="https://assets.grantimbo.com/imgs/services/email-marketing-sm.png 150w,
+						https://assets.grantimbo.com/imgs/services/email-marketing-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
-				src="/imgs/services/email-marketing-lg.png"
+				src="https://assets.grantimbo.com/imgs/services/email-marketing-lg.png"
 				width="323"
 				height="323"
 				alt="Email Marketing">
