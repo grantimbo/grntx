@@ -60,7 +60,6 @@ a {
     }
 }
 
-section.service a,
 .btn, button {
     background: var(--darkblue);
     border: var(--border);
@@ -272,7 +271,6 @@ nav.project-cat {
         font-size: 18px;
     }
 
-    section.service a,
     .btn, button {
         padding: .8rem 1.8rem;
         font-size: 1.2rem;
@@ -365,16 +363,6 @@ nav.project-cat {
 \*------------------------------------*/
 
 @font-face {
-	font-family: 'gotham_medium';
-	src: url('fonts/gotham/gotham_medium.eot');
-	src: local('☺'), url('fonts/gotham/gotham_medium.woff') format('woff'),
-					url('fonts/gotham/gotham_medium.ttf') format('truetype'),
-					url('fonts/gotham/gotham_medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'gotham_book';
 	src: url('fonts/gotham/gotham_book.eot');
 	src: local('☺'), url('fonts/gotham/gotham_book.woff') format('woff'),
@@ -416,27 +404,22 @@ nav.project-cat {
 	-moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-github:before { content: "\e603"; }
-  .icon-vimeo:before { content: "\e604"; }
-  .icon-twitter:before { content: "\e605"; }
-  .icon-instagram:before { content: "\e60a"; }
-  .icon-behance:before { content: "\e60c"; }
-  .icon-artstation:before { content: "\e901"; }
-  .icon-user:before { content: "\f007"; }
-  .icon-all:before { content: "\f00a"; }
-  .icon-facebook:before { content: "\f09a"; }
-  .icon-linkedin:before { content: "\f0e1"; }
-  .icon-motion:before { content: "\f144"; }
-  .icon-youtube:before { content: "\f16a"; }
-  .icon-codepen:before { content: "\f1cb"; }
-  .icon-home:before { content: "\e900"; }
-  .icon-quill:before { content: "\e907"; }
-  .icon-pen:before { content: "\e908"; }
-  .icon-image:before { content: "\e90d"; }
-  .icon-images:before { content: "\e90e"; }
-  .icon-film:before { content: "\e913"; }
-  .icon-file-picture:before { content: "\e927"; }
-  .icon-cog:before { content: "\e994"; }
-  .icon-glass:before { content: "\e9a0"; }
-  .icon-code:before { content: "\ea80"; }
-  .icon-back-arrow:before { content: "\ea40"; }
+.icon-github:before { content: "\e603"; }
+.icon-vimeo:before { content: "\e604"; }
+.icon-twitter:before { content: "\e605"; }
+.icon-instagram:before { content: "\e60a"; }
+.icon-behance:before { content: "\e60c"; }
+.icon-artstation:before { content: "\e901"; }
+.icon-user:before { content: "\f007"; }
+.icon-facebook:before { content: "\f09a"; }
+.icon-linkedin:before { content: "\f0e1"; }
+.icon-motion:before { content: "\f144"; }
+.icon-youtube:before { content: "\f16a"; }
+.icon-codepen:before { content: "\f1cb"; }
+.icon-home:before { content: "\e900"; }
+.icon-image:before { content: "\e90d"; }
+.icon-images:before { content: "\e90e"; }
+.icon-video-camera:before { content: "\e914"; }
+.icon-cog:before { content: "\e994"; }
+.icon-back-arrow:before { content: "\ea40"; }
+.icon-code:before { content: "\ea80"; }
