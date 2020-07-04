@@ -51,7 +51,6 @@
 			<div>
 				<h3>Graphic Design</h3>
 				<p>Product labels, posters, banners, logos, brochures, ebooks or any visual expressions.</p>
-				<Link to="/services/graphic-design">Examples</Link>
 			</div>
 		</div>
 	</article>
@@ -60,8 +59,7 @@
 		<div class="flex">
 			<div>
 				<h3>Website & Apps</h3>
-				<p>API driven website and apps using the latest technologies and frameworks such as Svelte, Flutter, etc.</p>
-				<Link to="/services/website-apps">Examples</Link>
+				<p>API driven websites and apps using the latest technologies and frameworks such as Svelte, Flutter, etc.</p>
 			</div>
 		</div>
 		<div class="flex img">
@@ -88,8 +86,7 @@
 		<div class="flex">
 			<div>
 				<h3>Product Renders</h3>
-				<p>High quality 3D realistic renderings of products that will surely increase your sales on Amazon.</p>
-				<Link to="/services/product-renders">Examples</Link>
+				<p>High quality 3D realistic product renderings that will increase your sales on Amazon.</p>
 			</div>
 		</div>
 	</article>
@@ -99,7 +96,6 @@
 			<div>
 				<h3>Video Production</h3>
 				<p>Logo intro reveal, Explainer videos, Motion design in 2D/3D or a simple VFX animation.</p>
-				<Link to="/services/video-production">Examples</Link>
 			</div>
 		</div>
 		<div class="flex img">
@@ -125,9 +121,8 @@
 		</div>
 		<div class="flex">
 			<div>
-				<h3>Email Marketing</h3>
-				<p>Generate leads, Run a webinar, Sell your products. We'll use tools like Clickfunnels, AWeber and more.</p>
-				<Link to="/services/email-marketing">Examples</Link>
+				<h3>Marketing</h3>
+				<p>Generate leads, Run a webinar, Sell your products and leverage the power of social media marketing.</p>
 			</div>
 		</div>
 	</article>
