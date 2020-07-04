@@ -1,3 +1,3 @@
-# Personal Website done in Svelte
+# Personal Website rebuild using Svelte (2020)
 
-https://grntx.grantimbo.com/
+https://grantimbo.com/
