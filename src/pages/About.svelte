@@ -24,26 +24,26 @@
 		
 		<h3>2011-2012 : Graphic / Motion Designer</h3>
 		<ul>
-			<li>Creating graphic & motion designs</li>
+			<li>Creating graphic & motion designs.</li>
 		</ul>
 		
 		<h3>2012-2014 : Graphic Designer, WordPress Developer and Front-end Developer</h3>
 		<ul>
 			<li>Designing graphic related stuff e.i logos, brochure, posters, banners, ebooks or any type of visual expressions.</li>
-			<li>Developing WordPress Themes - Designing PSD Mockups, converting them to HTML/CSS/JS then to WordPress Themes.</li>
-			<li>Occationally did some Animations / Explainer Videos</li>
+			<li>Developing WordPress themes - designing PSD mockups, converting them to HTML/CSS/JS then to WordPress themes.</li>
+			<li>Occationally did some animations / explainer videos.</li>
 		</ul>
 		
 		<h3>2014-2016 : Lead Graphic Designer, 3D Artist, Web Developer</h3>
 		<ul>
-			<li>Rendering high quality 3D Products for Amazon Listings</li>
+			<li>Rendering high quality 3D products for Amazon listings.</li>
 			<li>Responsible for creating web and graphic related designs.</li>
-			<li>Occationally Develop Websites.</li>
+			<li>Occationally develop websites.</li>
 		</ul>
 		
 		<h3>2016-2020 : Full Stack Developer, Designer</h3>
 		<ul>
-			<li>Building websites</li>
+			<li>Building websites.</li>
 			<li>Designing graphics for the web.</li>
 		</ul>
 		
@@ -54,13 +54,14 @@
 		
 		<p>Or just want to be friends?  Find me online on most digital platforms <span>@grantimbo</span> or <span>@grntx</span> or by clicking the links below. </p>
 		<div class="social-icons">
-			<a href="//youtube.com/grantimbo" target="_blank" alt="Youtube" rel="noopener"><i class="icon-youtube"></i></a>
-			<a href="//facebook.com/grntx" target="_blank" alt="Facebook" rel="noopener"><i class="icon-facebook"></i></a>
-			<a href="//instagram.com/grntx" target="_blank" alt="Instagram" rel="noopener"><i class="icon-instagram"></i></a>
-			<a href="//github.com/grantimbo" target="_blank" alt="Github" rel="noopener"><i class="icon-github"></i></a>
-			<a href="//codepen.io/grantimbo" target="_blank" alt="Codepen" rel="noopener"><i class="icon-codepen"></i></a>
-			<a href="//artstation.com/grantimbo" target="_blank" alt="Artstation" rel="noopener"><i class="icon-artstation"></i></a>
-			<a href="//behance.com/grantimbo" target="_blank" alt="Behance" rel="noopener"><i class="icon-behance"></i></a>
+			<a href="https://youtube.com/grantimbo" target="_blank" alt="Youtube" rel="noopener"><i class="icon-youtube"></i></a>
+			<a href="https://facebook.com/grntx" target="_blank" alt="Facebook" rel="noopener"><i class="icon-facebook"></i></a>
+			<a href="https://instagram.com/grntx" target="_blank" alt="Instagram" rel="noopener"><i class="icon-instagram"></i></a>
+			<a href="https://twitter.com/grantimbo" target="_blank" alt="Twitter" rel="noopener"><i class="icon-twitter"></i></a>
+			<a href="https://github.com/grantimbo" target="_blank" alt="Github" rel="noopener"><i class="icon-github"></i></a>
+			<a href="https://codepen.io/grantimbo" target="_blank" alt="Codepen" rel="noopener"><i class="icon-codepen"></i></a>
+			<a href="https://artstation.com/grantimbo" target="_blank" alt="Artstation" rel="noopener"><i class="icon-artstation"></i></a>
+			<a href="https://behance.com/grantimbo" target="_blank" alt="Behance" rel="noopener"><i class="icon-behance"></i></a>
 		</div>
 	</article>
 </section>
@@ -96,5 +97,4 @@
 		text-decoration: none;
 		color: var(--eggblue);
 	}
-	
 </style>

@@ -27,8 +27,6 @@
     </section>
 </section>
 
-
-
 <style>
     
     figure {

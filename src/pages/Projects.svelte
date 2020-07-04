@@ -11,7 +11,6 @@
     let showModal = false;
     let post;
     
-    // if single post
     if (slug) {
         showModal = true;
         post = projects.find(p => p.slug == slug);
@@ -20,7 +19,6 @@
             window.location.href = window.location.origin + "/404";
         }
     }
-
     
 </script>
 
@@ -56,9 +54,6 @@
             </figure>
         </Link>
 
-    {:else}
-        <!-- this block renders when photos.length === 0 -->
-        <p>No projects found</p>
     {/each}
     
    
