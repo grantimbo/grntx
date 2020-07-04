@@ -7,7 +7,7 @@
 	if ( e.target.dataset.modal != 'close') {
 		return;
 	} else {
-		window.history.back();
+		navigate("/projects", { replace: false });
 	}
   }
 </script>
