@@ -1,8 +1,28 @@
 export const projects = [
     {
+        title: 'Night Stroll',
+        slug: 'nightstroll',
+        date: 'August 2020',
+        tags: [],
+        thumbnail: '/projects/2020/nightstroll/nightstroll-thumb.jpg',
+        content: `
+        <img src="/projects/2020/nightstroll/nightstroll.jpg" width="1228" height="1534">
+        `
+    },
+    {
+        title: 'RX Punk',
+        slug: 'rxpunk',
+        date: 'August 2020',
+        tags: [],
+        thumbnail: '/projects/2020/rxpunk/rxpunk-thumb.jpg',
+        content: `
+        <img src="/projects/2020/rxpunk/rxpunk.jpg" width="1206" height="1507">
+        `
+    },
+    {
         title: 'Silver Dark NSX',
         slug: 'silverdarknsx',
-        date: 'July 2019',
+        date: 'March 2020',
         tags: ['icon-motion','icon-images'],
         thumbnail: '/projects/2020/silverdarknsx/silverdarknsx-thumb.jpg',
         content: `
@@ -15,7 +35,7 @@ export const projects = [
     {
         title: 'Speed Maniac',
         slug: 'speed-maniac',
-        date: 'July 2019',
+        date: 'August 2019',
         tags: ['icon-motion', 'icon-images'],
         thumbnail: '/projects/2019/speedmaniac/speedmaniac-thumb.jpg',
         content: `
@@ -26,7 +46,7 @@ export const projects = [
     {
         title: 'Green Evo',
         slug: 'green-evo',
-        date: 'July 2019',
+        date: 'May 2019',
         tags: ['icon-motion','icon-images'],
         thumbnail: '/projects/2019/greenevo/greenevo-thumb.jpg',
         content: `
@@ -38,7 +58,7 @@ export const projects = [
     {
         title: 'Wide Integra',
         slug: 'wide-integra',
-        date: 'July 2019',
+        date: 'August 2019',
         tags: [],
         thumbnail: '/projects/2019/wideintegra/wideintegra-thumb.jpg',
         content: `<img src="/projects/2019/wideintegra/wideintegra.jpg" width="1280" height="1600">`
