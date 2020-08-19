@@ -13,10 +13,22 @@ export const projects = [
         title: 'RX Punk',
         slug: 'rxpunk',
         date: 'August 2020',
-        tags: [],
+        tags: ['icon-images'],
         thumbnail: '/projects/2020/rxpunk/rxpunk-thumb.jpg',
         content: `
-        <img src="/projects/2020/rxpunk/rxpunk.jpg" width="1206" height="1507">
+        <img src="/projects/2020/rxpunk/rxpunk-1.jpg" width="1600" height="2000">
+        <img src="/projects/2020/rxpunk/rxpunk-2.jpg" width="1206" height="1507">
+        `
+    },
+    {
+        title: 'RX Drift',
+        slug: 'rxdrift',
+        date: 'August 2020',
+        tags: ['icon-images'],
+        thumbnail: '/projects/2020/rxdrift/rxdrift-thumb.jpg',
+        content: `
+        <img src="/projects/2020/rxdrift/rxdrift-1.jpg" width="1600" height="2000">
+        <img src="/projects/2020/rxdrift/rxdrift-2.jpg" width="1206" height="1507">
         `
     },
     {
