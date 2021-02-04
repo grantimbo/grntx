@@ -1,5 +1,25 @@
 export const projects = [
     {
+        title: 'That Red EG',
+        slug: 'thatredeg',
+        date: 'Feb 2021',
+        tags: [],
+        thumbnail: '/projects/2021/thatredeg/thatredeg-thumb.jpg',
+        content: `
+        <img src="/projects/2021/thatredeg/thatredeg.webp" width="1280" height="1599">
+        `
+    },
+    {
+        title: 'Blue Pandem',
+        slug: 'bluepandem',
+        date: 'Feb 2021',
+        tags: [],
+        thumbnail: '/projects/2021/bluepandem/bluepandem-thumb.jpg',
+        content: `
+        <img src="/projects/2021/bluepandem/bluepandem.webp" width="1280" height="1599">
+        `
+    },
+    {
         title: 'Night Stroll',
         slug: 'nightstroll',
         date: 'August 2020',
