@@ -1,12 +1,32 @@
 export const projects = [
     {
-        title: 'That Red EG',
-        slug: 'thatredeg',
-        date: 'Feb 2021',
+        title: 'Mr. Gray Evo',
+        slug: 'mr-gray-evo',
+        date: 'March 2021',
         tags: [],
-        thumbnail: '/projects/2021/thatredeg/thatredeg-thumb.jpg',
+        thumbnail: '/projects/2021/mrgrayevo/mrgrayevo-thumb.jpg',
         content: `
-        <img src="/projects/2021/thatredeg/thatredeg.webp" width="1280" height="1599">
+        <img src="/projects/2021/mrgrayevo/mrgrayevo.jpg" width="1280" height="1600">
+        `
+    },
+    {
+        title: 'Midnight Stroll',
+        slug: 'midnight-stroll',
+        date: 'March 2021',
+        tags: [],
+        thumbnail: '/projects/2021/midnightstroll/midnightstroll-thumb.jpg',
+        content: `
+        <img src="/projects/2021/midnightstroll/midnightstroll.jpg" width="1280" height="1600">
+        `
+    },
+    {
+        title: 'That Red Evo',
+        slug: 'that-red-evo',
+        date: 'March 2021',
+        tags: [],
+        thumbnail: '/projects/2021/thatredevo/thatredevo-thumb.jpg',
+        content: `
+        <img src="/projects/2021/thatredevo/thatredevo.jpg" width="1280" height="1600">
         `
     },
     {
@@ -17,6 +37,16 @@ export const projects = [
         thumbnail: '/projects/2021/bluepandem/bluepandem-thumb.jpg',
         content: `
         <img src="/projects/2021/bluepandem/bluepandem.webp" width="1280" height="1599">
+        `
+    },
+    {
+        title: 'That Red EG',
+        slug: 'thatredeg',
+        date: 'Feb 2021',
+        tags: [],
+        thumbnail: '/projects/2021/thatredeg/thatredeg-thumb.jpg',
+        content: `
+        <img src="/projects/2021/thatredeg/thatredeg.webp" width="1280" height="1599">
         `
     },
     {
