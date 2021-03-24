@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '../components/NavBar.svelte';
 	import { Link } from "svelte-routing";
+	import { fly } from 'svelte/transition';
 </script>
 
 <header>
@@ -9,7 +10,7 @@
     </Link>
     <Navbar/>
 </header>
-<section class="head">
+<section in:fly={{y: 20, duration: 1000}} class="head">
 	<img srcset="/imgs/services-head-sm.png 560w,
 				/imgs/services-head-lg.png 1066w"
 		sizes="(max-width: 768px) 560px, 1066px"
@@ -20,7 +21,7 @@
 </section>
 <section class="service">
 	<article>
-		<div class="flex img">
+		<div in:fly={{y: 20, duration: 1000, delay:300}} class="flex img">
 			<img srcset="/imgs/services/graphic-design-sm.png 150w,
 						/imgs/services/graphic-design-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
@@ -31,8 +32,8 @@
 		</div>
 		<div class="flex">
 			<div>
-				<h3>Graphic Design</h3>
-				<p>Product labels, posters, banners, logos, brochures, ebooks or any visual expressions.</p>
+				<h3 in:fly={{y: 20, duration: 1000, delay:400}}>Graphic Design</h3>
+				<p in:fly={{y: 20, duration: 1000, delay:500}}>Product labels, posters, banners, logos, brochures, ebooks or any visual expressions.</p>
 			</div>
 		</div>
 	</article>
@@ -40,11 +41,11 @@
 	<article>
 		<div class="flex">
 			<div>
-				<h3>Website & Apps</h3>
-				<p>API driven websites and apps using the latest technologies and frameworks such as Svelte, Flutter, etc.</p>
+				<h3 in:fly={{y: 20, duration: 1000, delay:900}}>Website & Apps</h3>
+				<p in:fly={{y: 20, duration: 1000, delay:1000}}>API driven websites and apps using the latest technologies and frameworks such as Svelte, Flutter, etc.</p>
 			</div>
 		</div>
-		<div class="flex img">
+		<div in:fly={{y: 20, duration: 1000, delay:800}} class="flex img">
 			<img srcset="/imgs/services/website-apps-sm.png 150w,
 						/imgs/services/website-apps-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
@@ -56,7 +57,7 @@
 	</article>
 
 	<article>
-		<div class="flex img">
+		<div in:fly={{y: 20, duration: 1000, delay:1300}} class="flex img">
 			<img srcset="/imgs/services/product-renders-sm.png 150w,
 						/imgs/services/product-renders-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
@@ -67,8 +68,8 @@
 		</div>
 		<div class="flex">
 			<div>
-				<h3>Product Renders</h3>
-				<p>High quality 3D realistic product renderings that will increase your sales on Amazon.</p>
+				<h3 in:fly={{y: 20, duration: 1000, delay:1400}}>Product Renders</h3>
+				<p in:fly={{y: 20, duration: 1000, delay:1500}}>High quality 3D realistic product renderings that will increase your sales on Amazon.</p>
 			</div>
 		</div>
 	</article>
@@ -76,11 +77,11 @@
 	<article>
 		<div class="flex">
 			<div>
-				<h3>Video Production</h3>
-				<p>Logo intro reveal, Explainer videos, Motion design in 2D/3D or a simple VFX animation.</p>
+				<h3 in:fly={{y: 20, duration: 1000, delay:1900}}>Video Production</h3>
+				<p in:fly={{y: 20, duration: 1000, delay:2000}}>Logo intro reveal, Explainer videos, Motion design in 2D/3D or a simple VFX animation.</p>
 			</div>
 		</div>
-		<div class="flex img">
+		<div in:fly={{y: 20, duration: 1000, delay:1800}} class="flex img">
 			<img srcset="/imgs/services/video-production-sm.png 150w,
 						/imgs/services/video-production-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
@@ -92,7 +93,7 @@
 	</article>
 
 	<article>
-		<div class="flex img">
+		<div in:fly={{y: 20, duration: 1000, delay:2300}} class="flex img">
 			<img srcset="/imgs/services/email-marketing-sm.png 150w,
 						/imgs/services/email-marketing-lg.png 323w"
 				sizes="(max-width: 768px) 150px, 323px"
@@ -103,8 +104,8 @@
 		</div>
 		<div class="flex">
 			<div>
-				<h3>Marketing</h3>
-				<p>Generate leads, Run a webinar, Sell your products and leverage the power of social media marketing.</p>
+				<h3 in:fly={{y: 20, duration: 1000, delay:2400}}>Marketing</h3>
+				<p in:fly={{y: 20, duration: 1000, delay:2500}}>Generate leads, Run a webinar, Sell your products and leverage the power of social media marketing.</p>
 			</div>
 		</div>
 	</article>

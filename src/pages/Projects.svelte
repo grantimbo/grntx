@@ -7,7 +7,6 @@
 
     export let slug;
 
-    let currentTab = 'featured';
     let showModal = false;
     let post;
     

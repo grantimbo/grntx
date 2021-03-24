@@ -1,5 +1,6 @@
 <script>
     import { Link } from "svelte-routing";
+    import { fly } from 'svelte/transition';
     import Navbar from '../components/NavBar.svelte';
 </script>
 
@@ -10,7 +11,7 @@
     <Navbar/>
 </header>
 <section class="contents">
-    <figure>
+    <figure in:fly={{y: 20, duration: 1000}}>
         <img srcset="/imgs/home-bg-sm.png 640w,
                     /imgs/home-bg-lg.png 1104w"
             sizes="(max-width: 768px) 640px, 1104px"
@@ -21,8 +22,8 @@
     </figure>
     <section>
         <article>
-            <h2>Hello I'm Grant.</h2>
-            <p>I'm a multimedia designer creating cool stuff across the web and a developer focusing mainly on <span style="white-space: nowrap;">front-end.</span></p>
+            <h2 in:fly={{y: 20, duration: 1000, delay:300}}>Hello I'm Grant.</h2>
+            <p in:fly={{y: 20, duration: 1000, delay:500}}>I'm a multimedia designer creating cool stuff across the web and a developer focusing mainly on <span style="white-space: nowrap;">front-end.</span></p>
         </article>
     </section>
 </section>
