@@ -42,7 +42,7 @@
 		<div class="flex">
 			<div>
 				<h3 in:fly={{y: 20, duration: 1000, delay:900}}>Website & Apps</h3>
-				<p in:fly={{y: 20, duration: 1000, delay:1000}}>API driven websites and apps using the latest technologies and frameworks such as Svelte, Flutter, etc.</p>
+				<p in:fly={{y: 20, duration: 1000, delay:1000}}>API driven websites and apps using the latest technologies and frameworks.</p>
 			</div>
 		</div>
 		<div in:fly={{y: 20, duration: 1000, delay:800}} class="flex img">
@@ -69,7 +69,7 @@
 		<div class="flex">
 			<div>
 				<h3 in:fly={{y: 20, duration: 1000, delay:1400}}>Product Renders</h3>
-				<p in:fly={{y: 20, duration: 1000, delay:1500}}>High quality 3D realistic product renderings that will increase your sales on Amazon.</p>
+				<p in:fly={{y: 20, duration: 1000, delay:1500}}>High quality realistic product 3D renderings that will increase your sales on Amazon.</p>
 			</div>
 		</div>
 	</article>
