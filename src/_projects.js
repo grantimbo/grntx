@@ -445,22 +445,6 @@ export const projects = [
         content: `<img src="/projects/2016/abstractrenders/tuby.jpg" width="1000" height="1000"> `
     },
     {
-        title: 'KTM Model',
-        slug: 'ktm-model',
-        date: 'August 2015',
-        tags: ['icon-images'],
-        thumbnail: '/projects/2015/ktm/ktm-thumb.jpg',
-        content: `
-        <img src="/projects/2015/ktm/ktm-1.jpg" width="1280" height="914">
-        <img src="/projects/2015/ktm/ktm-2.jpg" width="1280" height="914">
-        <img src="/projects/2015/ktm/ktm-3.jpg" width="1280" height="914">
-        <img src="/projects/2015/ktm/ktm-4.jpg" width="1280" height="914">
-        <img src="/projects/2015/ktm/ktm-5.jpg" width="1280" height="914">
-        <img src="/projects/2015/ktm/ktm-6.jpg" width="1280" height="914">
-        <img src="/projects/2015/ktm/ktm-7.jpg" width="1280" height="914">
-        `
-    },
-    {
         title: 'Do it Now',
         slug: 'do-it-now',
         date: 'July 2015',
