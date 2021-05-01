@@ -1,6 +1,10 @@
+.DS_Store
+node_modules
+/.svelte
+/build
+/functions
 /node_modules/
 /public/build/
 /src/assets/
 uncomp/
-
-.DS_Store
+.old
