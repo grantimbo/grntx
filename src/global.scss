@@ -403,7 +403,12 @@ nav.project-cat {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
-  
+
+.icon-close:before { content: "\e902";}
+.icon-angle-left:before { content: "\f104";}
+.icon-angle-right:before { content: "\f105";}
+.icon-angle-up:before { content: "\f106";}
+.icon-angle-down:before { content: "\f107";}
 .icon-github:before { content: "\e603"; }
 .icon-vimeo:before { content: "\e604"; }
 .icon-twitter:before { content: "\e605"; }
@@ -423,3 +428,19 @@ nav.project-cat {
 .icon-cog:before { content: "\e994"; }
 .icon-back-arrow:before { content: "\ea40"; }
 .icon-code:before { content: "\ea80"; }
+
+
+
+::-webkit-scrollbar { 
+    width: 8px;
+    background: #090e20;
+    padding: 6px;
+}
+::-webkit-scrollbar-thumb { 
+    background: #204483;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:window-inactive { 
+    background: #16305e;
+    border-radius: 6px;
+}
