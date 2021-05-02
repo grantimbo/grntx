@@ -6,18 +6,9 @@
     import Lazy from 'svelte-lazy';
 
     export let slug;
-
-    let showModal = false;
-    let post;
-    
-    if (slug) {
-        showModal = true;
-        post = projects.find(p => p.slug == slug);
-
-        if (!post) {
-            window.location.href = window.location.origin + "/404";
-        }
-    }
+		
+    let showModal;
+    !slug ? showModal = false : showModal = true
     
 </script>
 
@@ -59,16 +50,8 @@
     </section>
 
 
-    {#if post}
-
-        <Modal on:close="{() => showModal = false}">
-            <div slot="header">
-                <h3>{post.title}</h3>
-                <p class="date">{post.date}</p>
-            </div>
-            <div slot="content">{@html post.content}</div>
-        </Modal>
-
+    {#if showModal}
+        <Modal on:close="{() => showModal = false}" slug={slug}/>
     {/if}
 </section>
 
@@ -81,9 +64,6 @@
     
     h3 {
         margin: 0;
-    }
-    p.date {
-        font-size: .8rem;
     }
     .details {
         display: flex;
