@@ -1,4 +1,28 @@
 export const projects = [
+		{
+        title: 'Grey 22B',
+        slug: 'grey22b',
+        date: 'April 2021',
+        tags: [],
+        thumbnail: '/projects/2021/grey22b/grey22b-thumb.jpg',
+        content: `<img src="/projects/2021/grey22b/grey22b.jpg" width="1600" height="900">`
+    },
+    {
+        title: 'Classic 22B',
+        slug: 'classic22b',
+        date: 'April 2021',
+        tags: [],
+        thumbnail: '/projects/2021/classic22b/classic22b-thumb.jpg',
+        content: `<img src="/projects/2021/classic22b/classic22b.jpg" width="1600" height="900">`
+    },
+    {
+        title: 'That Subaru',
+        slug: 'that-subaru',
+        date: 'April 2021',
+        tags: [],
+        thumbnail: '/projects/2021/thatsubaru/thatsubaru-thumb.jpg',
+        content: `<img src="/projects/2021/thatsubaru/thatsubaru.jpg" width="1600" height="900">`
+    },
     {
         title: 'Mr. Gray Evo',
         slug: 'mr-gray-evo',
