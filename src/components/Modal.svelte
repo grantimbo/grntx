@@ -22,6 +22,7 @@
 	}
 
 	const showNext = () => {
+		document.querySelector('.modal').scrollTop = 0
 		projects.find((p, i) => {
 			if (p.slug === slug) {
 				let tae = i + 1
@@ -42,6 +43,7 @@
 	}
 
 	const showPrev = () => {
+		document.querySelector('.modal').scrollTop = 0
 		projects.find((p, i) => {
 			if (p.slug === slug) {
 				let tae = i - 1
@@ -78,9 +80,9 @@
 	<div class="modal-container">
 		<div class="close-modal" on:click={() => navigate("/projects", { replace: true })}><span class="icon-close"></span></div>
 		<div class="back"><i class="icon-back-arrow" data-modal="close" on:click={(e) => closeModal(e)}></i> Projects</div>
-		<div class="content">
+		<div class="modal-content">
 			<div class="header">
-				<h3>{post.title}</h3>
+				<h3 class="title">{post.title}</h3>
 				<p class="date">{post.date}</p>
 			</div>
 			<div class="content">{@html post.content}</div>
@@ -148,11 +150,16 @@
 		margin-right: 10px;
 		cursor: pointer;
 	}
-	.content {
+	.modal-content {
 		padding: 1rem;
+	}
+	h3.title {
+		font-size: 1.3rem;
+		margin-bottom: 0.2rem;
 	}
 	p.date {
 		font-size: .8rem;
+		margin-bottom: 1rem;
 	}
 
 

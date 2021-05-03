@@ -243,6 +243,10 @@ nav.project-cat {
 .modal img {
     border: var(--border);
     background: var(--darkblue);
+    max-height: 80vh;
+    width: auto;
+    margin: 0 auto 1rem;
+    display: block;
 }
 
 /*------------------------------------*\
