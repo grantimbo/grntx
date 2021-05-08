@@ -3,6 +3,7 @@
     import Navbar from '../components/NavBar.svelte';
     import { projects } from "../_projects";
     import { Link } from "svelte-routing";
+    import { fly } from 'svelte/transition';
     import Lazy from 'svelte-lazy';
 
     export let slug;
@@ -20,8 +21,10 @@
     <Navbar/>
 </header>
 <section class="project-wrap">
-    <h2>Featured Projects</h2>
-
+    <div class="project-head">
+        <h2 in:fly={{y: 20, duration: 1000}}>Personal Projects</h2>
+        <p in:fly={{y: 20, duration: 1000, delay:200}}>These are just some of my personal projects. Please email me if you wish to view my company works.</p>
+    </div>
     <section class="projects-list">
 
     {#each projects as project}
@@ -61,7 +64,12 @@
     .project-wrap {
         padding: 10px;
     }
-    
+    .project-head {
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        margin: 2rem auto 3rem;
+    }
     h3 {
         margin: 0;
     }
