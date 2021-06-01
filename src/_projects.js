@@ -1,5 +1,29 @@
 export const projects = [
-		{
+    {
+        title: 'Brians Eclipse',
+        slug: 'brianseclipse',
+        date: 'May 2021',
+        tags: [],
+        thumbnail: '/projects/2021/brianseclipse/brianseclipse-thumb.webp',
+        content: `<img src="/projects/2021/brianseclipse/brianseclipse.webp" width="1920" height="1080">`
+    },
+    {
+        title: 'Midnight Purple',
+        slug: 'midnighpurple',
+        date: 'May 2021',
+        tags: [],
+        thumbnail: '/projects/2021/midnighpurple/midnighpurple-thumb.webp',
+        content: `<img src="/projects/2021/midnighpurple/midnighpurple.webp" width="1920" height="1080">`
+    },
+    {
+        title: 'White Eclipse',
+        slug: 'whiteeclipse',
+        date: 'May 2021',
+        tags: [],
+        thumbnail: '/projects/2021/whiteeclipse/whiteeclipse-thumb.webp',
+        content: `<img src="/projects/2021/whiteeclipse/whiteeclipse.webp" width="1920" height="1080">`
+    },
+	{
         title: 'Grey 22B',
         slug: 'grey22b',
         date: 'April 2021',
@@ -315,7 +339,7 @@ export const projects = [
     {
         title: 'Chada Valencia',
         slug: 'chada-valencia',
-        date: 'July 2014',
+        date: 'July 2017',
         tags: ['icon-images'],
         thumbnail: '/projects/2019/chadavalencia/chadavalencia-thumb.jpg',
         content: `
@@ -561,7 +585,7 @@ export const projects = [
     {
         title: 'Type Compilation',
         slug: 'type-compilation',
-        date: 'July 2016',
+        date: '2011-2013',
         tags: ['icon-images'],
         thumbnail: '/projects/2012/typecompilation/type-compilation-thumb.jpg',
         content: `
