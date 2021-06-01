@@ -23,7 +23,7 @@
     <section>
         <article>
             <h2 in:fly={{y: 20, duration: 1000, delay:300}}>Hi. I'm Grant.</h2>
-            <p in:fly={{y: 20, duration: 1000, delay:500}}>Developer by day, artist by night.. Curently working as a full-time JavaScript developer and in spare time, redering <a href="https://youtube.com/grantimbo" target="_blank">3D cars </a> for fun.</p>
+            <p in:fly={{y: 20, duration: 1000, delay:500}}>Developer by day, artist by night.. Curently working as a full-time JavaScript developer and in spare time, rendering <a href="https://youtube.com/grantimbo" target="_blank">3D cars </a> for fun.</p>
         </article>
     </section>
 </section>
