@@ -23,7 +23,7 @@
 <section class="project-wrap">
     <div class="project-head">
         <h2 in:fly={{y: 20, duration: 1000}}>Personal Projects</h2>
-        <p in:fly={{y: 20, duration: 1000, delay:200}}>These are just some of my personal projects. Please email me if you wish to view my company works.</p>
+        <p in:fly={{y: 20, duration: 1000, delay:200}}>Shoot me an email if you wish to view my full portfolio</p>
     </div>
     <section class="projects-list">
 
